@@ -43,6 +43,15 @@ CORS_ALLOW_HEADERS = [
     "ApiAuthorization",
 ]
 
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://0.0.0.0:3000",
@@ -62,7 +71,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'newlevelsapi',
-    'corsheaders'
+    'corsheaders',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -158,4 +168,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 load_dotenv(find_dotenv())
 
+MEDIA_URL = "newlevels/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "newlevels")
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 API_KEY = os.environ["API_KEY"]
+
+CLOUD_NAME = os.environ["CLOUD_NAME"]
+CLOUDINARY_API_KEY = os.environ['CLOUDINARY_API_KEY']
+API_SECRET = os.environ['API_SECRET']
+
+CLOUDINARY_STORAGE = {
+    "CLOUD_NAME" : CLOUD_NAME, 
+    "API_KEY" : CLOUDINARY_API_KEY, 
+    "API_SECRET" : API_SECRET
+}

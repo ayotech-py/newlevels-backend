@@ -47,8 +47,33 @@ def convertImage(image):
     return image_file
 
 class ProductViewSet(ModelViewSet):
+    authentication_classes = [Authentication]
+    permission_classes = [IsAuthenticated]
+    
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
+
+    def create(self, request, *args, **kwargs):
+        data = request.data
+        user_id = request.user.id
+        customer = Customer.objects.get(user=user_id)
+        image = convertImage(data['image'])
+        data[image] = image
+        data['customer'] = customer.id
+        try:
+            Product.objects.create(
+                title=data['title'],
+                description=data['description'],
+                price=data['price'],
+                category=data['category'],
+                image=image,
+                customer=customer
+            ).save()
+            return Response({"message": "Product successfull added!"}, status=200)
+        except Exception as e:
+            return Response({"message": "An error occured"}, status=400)
+
+
 
 class CustomerViewSet(ModelViewSet):
     #authentication_classes = [ApiKeyAuthentication]
@@ -90,7 +115,6 @@ class CustomerLoginView(APIView):
         except Exception as e:
             return Response({"message": "Invalid email address"}, status=400)
 
-        print(serializer.validated_data)
         user = authenticate(
             username=serializer.validated_data["email"],
             password=serializer.validated_data["password"],
@@ -100,7 +124,6 @@ class CustomerLoginView(APIView):
             return Response({"message": "invalid email or password"}, status=400)
 
         check_user = Customer.objects.get(user_id=user.id)
-        print(check_user)
 
         if not check_user:
             return Response({"message": "invalid emall or password"}, status=400)
@@ -112,12 +135,25 @@ class CustomerLoginView(APIView):
 
         Jwt.objects.create(user_id=user.id, access=access, refresh=refresh)
 
+        user_email = User.objects.get(id=user.id).username
+        customer = Customer.objects.get(user=user.id)
+        product = Product.objects.filter(customer=customer.id)
+        serialized_product = ProductSerializer(product, many=True)
+        serialized_customer = CustomerSerializer(customer)
+        context = {
+            "product": serialized_product.data,
+            "customer": serialized_customer.data
+        }
+
         return Response(
-            {
-                "access": access,
-                "refresh": refresh,
+            {   
+                "tokens": {
+                    "accessToken": access,
+                    "refreshToken": refresh
+                },
                 "username": user.username,
                 "message": "Login successful!",
+                "userData": context
             }
         )
 
@@ -129,12 +165,11 @@ class GetCustomerDetails(APIView):
         user_id = request.user.id
         user_email = User.objects.get(id=user_id).username
         customer = Customer.objects.get(user=user_id)
-
         product = Product.objects.filter(customer=customer.id)
         serialized_product = ProductSerializer(product, many=True)
-        print(serialized_product.data)
+        serialized_customer = CustomerSerializer(customer)
         context = {
-            "product": serialized_product.data
+            "product": serialized_product.data,
+            "customer": serialized_customer.data
         }
-        print(context)
-        return Response(context)
+        return Response(context, status=200)
