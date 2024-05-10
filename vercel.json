@@ -21,7 +21,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "automacom_backend/wsgi.py"
+      "dest": "newlevels/wsgi.py"
     }
   ]
 }
