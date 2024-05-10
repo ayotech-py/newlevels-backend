@@ -46,11 +46,14 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://0.0.0.0:3000",
-    'https://newlevels-backend.vercel.app'
+    'https://newlevels-backend.vercel.app',
+    'newlevels-backend.vercel.app'
 ]
 
 ALLOWED_HOSTS = [
-    'https://newlevels-backend.vercel.app'
+    'https://newlevels-backend.vercel.app',
+    'newlevels-backend.vercel.app',
+    '.vercel.app'
 ]
 
 
