@@ -49,7 +49,9 @@ CORS_ALLOWED_ORIGINS = [
     'https://newlevels-backend.vercel.app'
 ]
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://newlevels-backend.vercel.app'
+]
 
 
 # Application definition
