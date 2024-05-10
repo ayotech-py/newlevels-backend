@@ -20,6 +20,7 @@ from django.forms.models import model_to_dict
 from django.core.files.base import ContentFile
 from django.contrib.auth.hashers import make_password
 
+
 def get_rand(length):
     return "".join(random.choices(string.ascii_uppercase + string.digits, k=length))
 
@@ -61,23 +62,44 @@ class ProductViewSet(ModelViewSet):
         data[image] = image
         data['customer'] = customer.id
         try:
-            Product.objects.create(
+            product = Product.objects.create(
                 title=data['title'],
                 description=data['description'],
                 price=data['price'],
                 category=data['category'],
                 image=image,
                 customer=customer
-            ).save()
-            return Response({"message": "Product successfull added!"}, status=200)
+            )
+            product.save()
+            return Response({"message": "Product successfull added!", "product": ProductSerializer(product).data}, status=200)
         except Exception as e:
             return Response({"message": "An error occured"}, status=400)
 
+    def update(self, request, *args, **kwargs):
+        data = request.data
+        user_id = request.user.id
+        customer = Customer.objects.get(user=user_id)
+        product = Product.objects.get(id=data['id'])
+        try:
+            image = convertImage(data['image'])
+            product.title = data['title']
+            product.description = data['description']
+            product.category = data['category']
+            product.price = data['price']
+            product.image = image
+            product.save()
+        except Exception as e:
+            product.title = data['title']
+            product.description = data['description']
+            product.category = data['category']
+            product.price = data['price']
+            product.save()
+        return Response({"message": "Ads successfully Updated!", 'product': ProductSerializer(product).data})
 
 
 class CustomerViewSet(ModelViewSet):
     #authentication_classes = [ApiKeyAuthentication]
-    
+
     serializer_class = CustomerSerializer
     queryset = Customer.objects.all()
 
@@ -145,6 +167,7 @@ class CustomerLoginView(APIView):
             "customer": serialized_customer.data
         }
 
+        print(user.username)
         return Response(
             {   
                 "tokens": {
@@ -173,3 +196,40 @@ class GetCustomerDetails(APIView):
             "customer": serialized_customer.data
         }
         return Response(context, status=200)
+
+class UpdateCustomer(APIView):
+    authentication_classes = [Authentication]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        user_id = request.user.id
+        data = request.data
+        customer = Customer.objects.get(user=user_id)
+
+        try:
+            image = convertImage(data['image'])
+            customer.profile_image = image
+        except Exception as e:
+            pass
+        try:
+            request.user.email = data['email']
+            request.user.username = data['email']
+            customer.name = data['name']
+            customer.phone = data['phone']
+            customer.email = data['email']
+            customer.location = data['location']
+            customer.save()
+            request.user.save()
+
+            product = Product.objects.filter(customer=customer.id)
+            serialized_product = ProductSerializer(product, many=True)
+            serialized_customer = CustomerSerializer(customer)
+            context = {
+                "product": serialized_product.data,
+                "customer": serialized_customer.data
+            }
+
+            return Response({"message": "Profile successfully Updated!", "userData": context}, status=200)
+        except Exception as e:
+            return Response({"message": "An error occured!"}, status=400)
+

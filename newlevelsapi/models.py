@@ -1,4 +1,5 @@
-from djongo import models
+#from djongo import models
+from django.db import models
 from django.contrib.auth.models import User, auth
 import uuid
 
@@ -20,7 +21,7 @@ class Customer(models.Model):
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=20, null=True)
     location = models.CharField(max_length=255, null=True)
-    profile_image = models.ImageField(upload_to="profile_images/", default="no-product-img.png")
+    profile_image = models.ImageField(upload_to="profile_images/", default="no-profile.png")
 
 class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
