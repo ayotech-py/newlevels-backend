@@ -54,6 +54,14 @@ class ProductViewSet(ModelViewSet):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
 
+    def get_queryset(self):
+        try:
+            queryset = super().get_queryset()
+            queryset = queryset.filter(approved=True).order_by('-featured')
+            return queryset
+        except Exception as e:
+            return Response({"message": "Failed to fetch"})
+
     def create(self, request, *args, **kwargs):
         data = request.data
         user_id = request.user.id
