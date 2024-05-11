@@ -1,5 +1,5 @@
-#from djongo import models
-from django.db import models
+from djongo import models
+#from django.db import models
 from django.contrib.auth.models import User, auth
 import uuid
 
@@ -31,3 +31,6 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     category = models.CharField(max_length=255)
+    condition = models.IntegerField(default=0)
+    featured = models.BooleanField(default=False)
+    approved = models.BooleanField(default=False)

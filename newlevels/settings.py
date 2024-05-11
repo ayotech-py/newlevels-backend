@@ -115,14 +115,14 @@ WSGI_APPLICATION = 'newlevels.wsgi.application'
     }
 } """
 
-""" DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'newlevels',
     }
-} """
+}
 
-DATABASES = {
+""" DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "verceldb",
@@ -130,7 +130,7 @@ DATABASES = {
         "PASSWORD": "zkB1sx3pOvXa",
         "HOST": "ep-orange-haze-a4jaxczk-pooler.us-east-1.aws.neon.tech",
     }
-}
+} """
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
