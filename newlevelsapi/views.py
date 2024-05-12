@@ -26,7 +26,7 @@ def get_rand(length):
 
 def get_access_token(payload):
     return jwt.encode(
-        {"exp": datetime.now() + timedelta(minutes=1000), **payload},
+        {"exp": datetime.now() + timedelta(minutes=10), **payload},
         settings.SECRET_KEY,
         algorithm="HS256",
     )
@@ -167,7 +167,7 @@ class CustomerLoginView(APIView):
 
         user_email = User.objects.get(id=user.id).username
         customer = Customer.objects.get(user=user.id)
-        product = Product.objects.filter(customer=customer.id)
+        product = Product.objects.filter(customer=customer.id).order_by('-featured')
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
         context = {
@@ -175,7 +175,6 @@ class CustomerLoginView(APIView):
             "customer": serialized_customer.data
         }
 
-        print(user.username)
         return Response(
             {   
                 "tokens": {
@@ -185,7 +184,7 @@ class CustomerLoginView(APIView):
                 "username": user.username,
                 "message": "Login successful!",
                 "userData": context
-            }
+            }, status=200
         )
 
 class GetCustomerDetails(APIView):
@@ -196,7 +195,7 @@ class GetCustomerDetails(APIView):
         user_id = request.user.id
         user_email = User.objects.get(id=user_id).username
         customer = Customer.objects.get(user=user_id)
-        product = Product.objects.filter(customer=customer.id)
+        product = Product.objects.filter(customer=customer.id).order_by('-featured')
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
         context = {
@@ -229,7 +228,7 @@ class UpdateCustomer(APIView):
             customer.save()
             request.user.save()
 
-            product = Product.objects.filter(customer=customer.id)
+            product = Product.objects.filter(customer=customer.id).order_by('-featured')
             serialized_product = ProductSerializer(product, many=True)
             serialized_customer = CustomerSerializer(customer)
             context = {
