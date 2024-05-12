@@ -39,4 +39,4 @@ class Product(models.Model):
     condition = models.CharField(max_length=50, default='Brand New')
 
     def __str__(self):
-        return f"{Customer.objects.get(id=self.customer.id).name} - {self.title}"
+        return f"{Customer.objects.get(id=self.customer.id).name} - {self.title} - Approved: {self.approved} - Featured: {self.featured}"
