@@ -23,5 +23,6 @@
       "src": "/(.*)",
       "dest": "newlevels/wsgi.py"
     }
-  ]
+  ],
+  "outputDirectory": "staticfiles_build"
 }

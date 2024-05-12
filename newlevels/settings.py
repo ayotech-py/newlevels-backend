@@ -178,7 +178,8 @@ load_dotenv(find_dotenv())
 MEDIA_URL = "newlevels/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "newlevels")
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
