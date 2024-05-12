@@ -23,6 +23,9 @@ class Customer(models.Model):
     location = models.CharField(max_length=255, null=True)
     profile_image = models.ImageField(upload_to="profile_images/", default="no-profile.png")
 
+    def __str__(self):
+        return f"{self.name}"
+
 class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
@@ -31,7 +34,9 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=0)
     category = models.CharField(max_length=255)
-    condition = models.IntegerField(default=0)
     featured = models.BooleanField(default=False)
     approved = models.BooleanField(default=False)
     condition = models.CharField(max_length=50, default='Brand New')
+
+    def __str__(self):
+        return f"{Customer.objects.get(id=self.customer.id).name} - {self.title}"

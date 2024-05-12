@@ -26,7 +26,7 @@ def get_rand(length):
 
 def get_access_token(payload):
     return jwt.encode(
-        {"exp": datetime.now() + timedelta(minutes=10), **payload},
+        {"exp": datetime.now() + timedelta(minutes=1000), **payload},
         settings.SECRET_KEY,
         algorithm="HS256",
     )
@@ -75,6 +75,7 @@ class ProductViewSet(ModelViewSet):
                 description=data['description'],
                 price=data['price'],
                 category=data['category'],
+                condition=data['condition'],
                 image=image,
                 customer=customer
             )
@@ -94,6 +95,7 @@ class ProductViewSet(ModelViewSet):
             product.description = data['description']
             product.category = data['category']
             product.price = data['price']
+            product.condition = data['condition']
             product.image = image
             product.save()
         except Exception as e:
@@ -101,6 +103,7 @@ class ProductViewSet(ModelViewSet):
             product.description = data['description']
             product.category = data['category']
             product.price = data['price']
+            product.condition = data['condition']
             product.save()
         return Response({"message": "Ads successfully Updated!", 'product': ProductSerializer(product).data})
 
