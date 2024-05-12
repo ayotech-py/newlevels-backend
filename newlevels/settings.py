@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9h8or6jau4xks6u=)(n%k1zdc(jyswho778=+@cq*$w&l$s4#1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -179,7 +179,12 @@ MEDIA_URL = "newlevels/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "newlevels")
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+if DEBUG:
+  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+else:
+  STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
