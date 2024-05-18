@@ -15,3 +15,18 @@ class ProductSerializer(serializers.ModelSerializer):
 class CustomerLoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField()
+
+class ChatRoomSerializer(serializers.ModelSerializer):
+    product = ProductSerializer()
+    member1 = CustomerSerializer()
+    member2 = CustomerSerializer()
+    class Meta:
+        model = ChatRoom
+        fields = '__all__'
+
+class MessageSerializer(serializers.ModelSerializer):
+    sender = serializers.StringRelatedField(read_only=True)
+
+    class Meta:
+        model = Message
+        fields = '__all__'

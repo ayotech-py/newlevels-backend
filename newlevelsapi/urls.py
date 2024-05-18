@@ -6,6 +6,8 @@ from .models import *
 router = DefaultRouter()
 router.register("products", ProductViewSet, basename=Product)
 router.register("customers", CustomerViewSet, basename=Customer)
+router.register(r'chatrooms', ChatRoomViewSet, basename=ChatRoom)
+router.register(r'messages', MessageViewSet, basename=Message)
 
 urlpatterns = [
     path("", include(router.urls)),

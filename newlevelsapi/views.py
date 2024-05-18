@@ -19,6 +19,8 @@ from rest_framework.permissions import IsAuthenticated
 from django.forms.models import model_to_dict
 from django.core.files.base import ContentFile
 from django.contrib.auth.hashers import make_password
+from asgiref.sync import sync_to_async
+
 
 
 def get_rand(length):
@@ -171,11 +173,21 @@ class CustomerLoginView(APIView):
         user_email = User.objects.get(id=user.id).username
         customer = Customer.objects.get(user=user.id)
         product = Product.objects.filter(customer=customer.id).order_by('-featured')
+        chat_messages = Message.objects.filter(sender=customer.id)
+        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
+
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
+        serialized_chat = MessageSerializer(chat_messages, many=True)
+        serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
+        print(serialized_chatroom.data)
+
+
         context = {
             "product": serialized_product.data,
-            "customer": serialized_customer.data
+            "customer": serialized_customer.data,
+            "chats": serialized_chat.data,
+            "chat_rooms": serialized_chatroom.data
         }
 
         return Response(
@@ -243,3 +255,30 @@ class UpdateCustomer(APIView):
         except Exception as e:
             return Response({"message": "An error occured!"}, status=400)
 
+class ChatRoomViewSet(ModelViewSet):
+    queryset = ChatRoom.objects.all()
+    serializer_class = ChatRoomSerializer
+    permission_classes = [IsAuthenticated]
+
+class MessageViewSet(ModelViewSet):
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer
+    #permission_classes = [IsAuthenticated]
+
+    def perform_create(self, serializer):
+        serializer.save(sender=self.request.user.customer)
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        query_params = self.request.query_params
+
+        filters = []
+
+        room_id_params = query_params.get("room_id")
+        if room_id_params:
+            filters.append(Q(chat_room__id=room_id_params))
+
+        if filters:
+            queryset = queryset.filter(Q(*filters))
+
+        return queryset

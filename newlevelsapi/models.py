@@ -24,7 +24,7 @@ class Customer(models.Model):
     profile_image = models.ImageField(upload_to="profile_images/", default="no-profile.png")
 
     def __str__(self):
-        return f"{self.name}"
+        return f"{self.email}"
 
 class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -40,3 +40,20 @@ class Product(models.Model):
 
     def __str__(self):
         return f"{Customer.objects.get(id=self.customer.id).name} - {self.title} - Approved: {self.approved} - Featured: {self.featured}"
+
+class ChatRoom(models.Model):
+    member1 = models.ForeignKey(Customer, related_name='chatrooms_member1', on_delete=models.CASCADE)
+    member2 = models.ForeignKey(Customer, related_name='chatrooms_member2', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, default='da7f872c-25e0-450e-8b59-20b217d65adf')
+
+    def __str__(self):
+        return f"{self.member1.user.username} and {self.member2.user.username}"
+
+class Message(models.Model):
+    chat_room = models.ForeignKey(ChatRoom, related_name='messages', on_delete=models.CASCADE)
+    sender = models.ForeignKey(Customer, related_name='messages', on_delete=models.CASCADE)
+    content = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"From {self.sender.user.username}: {self.content[:20]}"

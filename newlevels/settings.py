@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9h8or6jau4xks6u=)(n%k1zdc(jyswho778=+@cq*$w&l$s4#1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'newlevelsapi',
     'corsheaders',
     'cloudinary_storage',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -103,6 +104,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'newlevels.wsgi.application'
+ASGI_APPLICATION = 'newlevels.asgi.application'
+
 
 
 # Database
@@ -131,6 +134,17 @@ DATABASES = {
         "HOST": "ep-orange-haze-a4jaxczk-pooler.us-east-1.aws.neon.tech",
     }
 }
+
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
