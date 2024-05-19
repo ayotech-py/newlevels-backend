@@ -2,6 +2,11 @@
   "version": 2,
   "builds": [
     {
+      "src": "newlevels/asgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    },
+    {
       "src": "newlevels/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
@@ -22,6 +27,10 @@
     {
       "src": "/(.*)",
       "dest": "newlevels/wsgi.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "newlevels/asgi.py"
     }
   ],
   "outputDirectory": "staticfiles_build"
