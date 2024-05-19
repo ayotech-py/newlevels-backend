@@ -371,6 +371,7 @@ def send_message(request):
         
         pusher_client.trigger(f'chat_{room_id}', 'chat_message', {
             'id': message.id,
+            'chat_room': room.id,
             'content': content,
             'sender': sender.email,
             'timestamp': message.timestamp.isoformat()
