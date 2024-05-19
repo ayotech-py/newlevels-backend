@@ -29,7 +29,7 @@
       "dest": "newlevels/wsgi.py"
     },
     {
-      "src": "/(.*)",
+      "src": "/ws/(.*)",
       "dest": "newlevels/asgi.py"
     }
   ],
