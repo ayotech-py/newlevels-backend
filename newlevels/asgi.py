@@ -11,6 +11,10 @@ import os
 from django.core.asgi import get_asgi_application
 from channels.routing import ProtocolTypeRouter, URLRouter
 from channels.auth import AuthMiddlewareStack
+
+django_asgi_app = get_asgi_application()
+
+
 from newlevelsapi.routing import websocket_urlpatterns
 from channels.security.websocket import AllowedHostsOriginValidator, OriginValidator
 
@@ -20,7 +24,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'newlevels.settings')
 #application = get_asgi_application()
 
 application = ProtocolTypeRouter({
-    "http": get_asgi_application(),
+    "http": django_asgi_app,
     "websocket": AuthMiddlewareStack(
                     URLRouter(
                         websocket_urlpatterns
