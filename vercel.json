@@ -25,12 +25,12 @@
       "dest": "/static/$1"
     },
     {
-      "src": "/(.*)",
-      "dest": "newlevels/wsgi.py"
-    },
-    {
       "src": "/ws/(.*)",
       "dest": "newlevels/asgi.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "newlevels/wsgi.py"
     }
   ],
   "outputDirectory": "staticfiles_build"
