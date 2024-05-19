@@ -21,7 +21,7 @@ class Customer(models.Model):
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=20, null=True)
     location = models.CharField(max_length=255, null=True)
-    profile_image = models.ImageField(upload_to="profile_images/", default="no-profile.png")
+    profile_image = models.ImageField(upload_to="profile_images/", default="/v1/no-profile.png")
 
     def __str__(self):
         return f"{self.email}"
