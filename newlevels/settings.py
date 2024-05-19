@@ -71,7 +71,6 @@ INSTALLED_APPS = [
     'newlevelsapi',
     'corsheaders',
     'cloudinary_storage',
-    'channels',
 ]
 
 MIDDLEWARE = [
@@ -104,7 +103,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'newlevels.wsgi.application'
-ASGI_APPLICATION = 'newlevels.asgi.application'
+#ASGI_APPLICATION = 'newlevels.asgi.application'
 
 
 
@@ -145,14 +144,14 @@ DATABASES = {
     },
 } """
 
-CHANNEL_LAYERS = {
+""" CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
             "hosts": ["redis://:NAIZ3Akc8mf4KMvJvAaxE731Wak00T42@redis-14429.c276.us-east-1-2.ec2.redns.redis-cloud.com:14429/0"],
         },
     },
-}
+} """
 
 
 # Password validation

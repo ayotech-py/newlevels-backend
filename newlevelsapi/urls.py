@@ -3,6 +3,7 @@ from django.urls import path, include
 from .views import *
 from .models import *
 
+
 router = DefaultRouter()
 router.register("products", ProductViewSet, basename=Product)
 router.register("customers", CustomerViewSet, basename=Customer)
@@ -13,7 +14,8 @@ urlpatterns = [
     path("", include(router.urls)),
     path("auth-login/", CustomerLoginView.as_view()),
     path("get-customer-data/", GetCustomerDetails.as_view()),
-    path("update-customer-data/", UpdateCustomer.as_view())
+    path("update-customer-data/", UpdateCustomer.as_view()),
+    path('send_message', send_message, name='send_message'),
 
     #path("get-data/", GetMemberData.as_view()),
 ]

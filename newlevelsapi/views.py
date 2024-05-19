@@ -20,6 +20,10 @@ from django.forms.models import model_to_dict
 from django.core.files.base import ContentFile
 from django.contrib.auth.hashers import make_password
 from asgiref.sync import sync_to_async
+import pusher
+from django.views.decorators.csrf import csrf_exempt
+import json
+from django.http import JsonResponse
 
 
 
@@ -320,3 +324,33 @@ class MessageViewSet(ModelViewSet):
             queryset = queryset.filter(Q(*filters))
 
         return queryset
+
+pusher_client = pusher.Pusher(
+  app_id='1805156',
+  key='5f083f9b2bd0c3f2b6df',
+  secret='da6bf312d405c9a08c0f',
+  cluster='eu',
+  ssl=True
+)
+
+@csrf_exempt
+def send_message(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        room_id = data['room_id']
+        sender_email = data['sender']
+        content = data['message']
+        
+        room = ChatRoom.objects.get(id=room_id)
+        sender = Customer.objects.get(email=sender_email)
+        message = Message.objects.create(chat_room=room, sender=sender, content=content)
+        
+        pusher_client.trigger(f'chat_{room_id}', 'chat_message', {
+            'id': message.id,
+            'content': content,
+            'sender': sender.email,
+            'timestamp': message.timestamp.isoformat()
+        })
+        
+        return JsonResponse({'status': 'Message sent'})
+    return JsonResponse({'error': 'Invalid request'}, status=400)
