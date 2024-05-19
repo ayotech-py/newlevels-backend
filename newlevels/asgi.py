@@ -17,6 +17,7 @@ from channels.auth import AuthMiddlewareStack
 from channels.security.websocket import AllowedHostsOriginValidator, OriginValidator
 
 django_asgi_app = get_asgi_application()
+app = django_asgi_app
 
 from newlevelsapi.routing import websocket_urlpatterns
 
