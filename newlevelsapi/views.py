@@ -173,14 +173,13 @@ class CustomerLoginView(APIView):
         user_email = User.objects.get(id=user.id).username
         customer = Customer.objects.get(user=user.id)
         product = Product.objects.filter(customer=customer.id).order_by('-featured')
-        chat_messages = Message.objects.filter(sender=customer.id)
+        chat_messages = Message.objects.filter(Q(chat_room__member1=customer.id) | Q(chat_room__member2=customer.id))
         chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
 
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
         serialized_chat = MessageSerializer(chat_messages, many=True)
         serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
-        print(serialized_chatroom.data)
 
 
         context = {
@@ -258,7 +257,46 @@ class UpdateCustomer(APIView):
 class ChatRoomViewSet(ModelViewSet):
     queryset = ChatRoom.objects.all()
     serializer_class = ChatRoomSerializer
+    authentication_classes = [Authentication]
     permission_classes = [IsAuthenticated]
+
+    def create(self, request, *args, **kwargs):
+        data = request.data
+        message = data['chat']
+        user = request.user
+        member1 = Customer.objects.get(user=user.id)
+        product = Product.objects.get(id=data['product_id'])
+        member2 = product.customer
+        
+        try:
+            check_chatroom = ChatRoom.objects.filter(Q(member1=member1) & Q(member2=member2) | Q(member1=member2) & Q(member2=member1))
+            if check_chatroom.exists():
+                last_chatroom = check_chatroom.last()
+                last_chatroom.product = product
+                last_chatroom.save()
+                chat_message = Message.objects.create(chat_room=check_chatroom.last(), sender=member1, content=message)
+                chat_message.save()
+            else:
+                chatroom = ChatRoom.objects.create(member1=member1, member2=member2, product=product)
+                chat_message = Message.objects.create(chat_room=chatroom, sender=member1, content=message)
+                chat_message.save()
+                chatroom.save()
+
+            chat_messages = Message.objects.filter(Q(chat_room__member1=member1.id) | Q(chat_room__member2=member1.id))
+            chatrooms = ChatRoom.objects.filter(Q(member1=member1) | Q(member2=member1))
+
+            serialized_chat = MessageSerializer(chat_messages, many=True)
+            serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
+
+            context = {
+                "chats": serialized_chat.data,
+                "chat_rooms": serialized_chatroom.data
+            }
+            return Response({"message": "Message successfully sent", "chatData": context}, status=200)
+        except Exception as e:
+            print(e)
+            return Response({"message": "An error occurred"}, status=400)
+
 
 class MessageViewSet(ModelViewSet):
     queryset = Message.objects.all()

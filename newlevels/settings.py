@@ -136,11 +136,20 @@ DATABASES = {
 }
 
 
-CHANNEL_LAYERS = {
+""" CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
             "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+} """
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": ["redis://:NAIZ3Akc8mf4KMvJvAaxE731Wak00T42@redis-14429.c276.us-east-1-2.ec2.redns.redis-cloud.com:14429/0"],
         },
     },
 }
