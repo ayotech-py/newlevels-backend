@@ -54,11 +54,21 @@ def convertImage(image):
     return image_file
 
 class ProductViewSet(ModelViewSet):
-    authentication_classes = [Authentication]
-    permission_classes = [IsAuthenticated]
+    """ authentication_classes = [Authentication]
+    permission_classes = [IsAuthenticated] """
     
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
+
+    def get_authenticators(self):
+        if self.request.method == 'GET':
+            return [ApiKeyAuthentication()]
+        return [Authentication()]
+
+    def get_permissions(self):
+        if self.request.method == 'GET':
+            return []  # No additional permissions for GET requests
+        return [IsAuthenticated()]
 
     def get_queryset(self):
         try:
@@ -174,6 +184,8 @@ class CustomerLoginView(APIView):
 
         Jwt.objects.create(user_id=user.id, access=access, refresh=refresh)
 
+        
+
         user_email = User.objects.get(id=user.id).username
         customer = Customer.objects.get(user=user.id)
         product = Product.objects.filter(customer=customer.id).order_by('-featured')
@@ -210,17 +222,29 @@ class GetCustomerDetails(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        user_id = request.user.id
-        user_email = User.objects.get(id=user_id).username
-        customer = Customer.objects.get(user=user_id)
+        user = request.user
+        customer = Customer.objects.get(user=user.id)
         product = Product.objects.filter(customer=customer.id).order_by('-featured')
+        chat_messages = Message.objects.filter(Q(chat_room__member1=customer.id) | Q(chat_room__member2=customer.id))
+        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
+
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
+        serialized_chat = MessageSerializer(chat_messages, many=True)
+        serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
+
         context = {
             "product": serialized_product.data,
-            "customer": serialized_customer.data
+            "customer": serialized_customer.data,
+            "chats": serialized_chat.data,
+            "chat_rooms": serialized_chatroom.data
         }
-        return Response(context, status=200)
+
+        return Response(
+            {   
+                "userData": context
+            }, status=200
+        )
 
 class UpdateCustomer(APIView):
     authentication_classes = [Authentication]

@@ -9,6 +9,7 @@ from rest_framework.exceptions import AuthenticationFailed
 class ApiKeyAuthentication(BaseAuthentication):
     def authenticate(self, request):
         api_key = request.headers.get("ApiAuthorization")
+        print(api_key)
 
         if not api_key:
             raise AuthenticationFailed("Please provide an API key")
