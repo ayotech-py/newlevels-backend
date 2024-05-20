@@ -17,7 +17,7 @@ class Jwt(models.Model):
 
 class Customer(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=20, null=True)
     location = models.CharField(max_length=255, null=True)

@@ -137,6 +137,8 @@ class CustomerViewSet(ModelViewSet):
         serialized_data = self.serializer_class(data=data)        
         if len(list(User.objects.filter(email=data["email"]))) > 0:
             return Response({"message": "Email address already exist"}, status=400)
+        elif len(list(User.objects.filter(customer__name=data["name"]))) > 0:
+            return Response({"message": "Name already exist"}, status=400)
         try:
             user = User.objects.create(
                 username=serialized_data.initial_data["email"],
@@ -273,11 +275,18 @@ class UpdateCustomer(APIView):
             request.user.save()
 
             product = Product.objects.filter(customer=customer.id).order_by('-featured')
+            chat_messages = Message.objects.filter(Q(chat_room__member1=customer.id) | Q(chat_room__member2=customer.id))
+            chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
+
             serialized_product = ProductSerializer(product, many=True)
             serialized_customer = CustomerSerializer(customer)
+            serialized_chat = MessageSerializer(chat_messages, many=True)
+            serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
             context = {
                 "product": serialized_product.data,
-                "customer": serialized_customer.data
+                "customer": serialized_customer.data,
+                "chats": serialized_chat.data,
+                "chat_rooms": serialized_chatroom.data
             }
 
             return Response({"message": "Profile successfully Updated!", "userData": context}, status=200)
