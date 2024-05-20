@@ -15,7 +15,9 @@ urlpatterns = [
     path("auth-login/", CustomerLoginView.as_view()),
     path("get-customer-data/", GetCustomerDetails.as_view()),
     path("update-customer-data/", UpdateCustomer.as_view()),
-    path('send_message', send_message, name='send_message'),
+    path('send_message/', SendMessageView.as_view(), name='send_message'),
+
+    #path('send_message', send_message, name='send_message'),
 
     #path("get-data/", GetMemberData.as_view()),
 ]

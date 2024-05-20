@@ -212,9 +212,15 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 API_KEY = os.environ["API_KEY"]
 
+PUSHER_APP_ID=os.environ['PUSHER_APP_ID']
+PUSHER_KEY=os.environ['PUSHER_KEY']
+PUSHER_SECRET=os.environ['PUSHER_SECRET']
+PUSHER_CLUSTER=os.environ['PUSHER_CLUSTER']
+
 CLOUD_NAME = os.environ["CLOUD_NAME"]
 CLOUDINARY_API_KEY = os.environ['CLOUDINARY_API_KEY']
 API_SECRET = os.environ['API_SECRET']
+
 
 CLOUDINARY_STORAGE = {
     "CLOUD_NAME" : CLOUD_NAME, 

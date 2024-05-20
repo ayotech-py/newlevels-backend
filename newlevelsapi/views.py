@@ -22,9 +22,11 @@ from django.contrib.auth.hashers import make_password
 from asgiref.sync import sync_to_async
 import pusher
 from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+from django.shortcuts import get_object_or_404
 import json
 from django.http import JsonResponse
-
+from rest_framework import status
 
 
 def get_rand(length):
@@ -32,7 +34,7 @@ def get_rand(length):
 
 def get_access_token(payload):
     return jwt.encode(
-        {"exp": datetime.now() + timedelta(minutes=5), **payload},
+        {"exp": datetime.now() + timedelta(minutes=7200), **payload},
         settings.SECRET_KEY,
         algorithm="HS256",
     )
@@ -326,7 +328,6 @@ class ChatRoomViewSet(ModelViewSet):
             }
             return Response({"message": "Message successfully sent", "chatData": context}, status=200)
         except Exception as e:
-            print(e)
             return Response({"message": "An error occurred"}, status=400)
 
 
@@ -353,33 +354,41 @@ class MessageViewSet(ModelViewSet):
 
         return queryset
 
+
 pusher_client = pusher.Pusher(
-  app_id='1805156',
-  key='5f083f9b2bd0c3f2b6df',
-  secret='da6bf312d405c9a08c0f',
-  cluster='eu',
+  app_id=settings.PUSHER_APP_ID,
+  key=settings.PUSHER_KEY,
+  secret=settings.PUSHER_SECRET,
+  cluster=settings.PUSHER_CLUSTER,
   ssl=True
 )
 
-@csrf_exempt
-def send_message(request):
-    if request.method == 'POST':
-        data = json.loads(request.body)
-        room_id = data['room_id']
-        sender_email = data['sender']
-        content = data['message']
-        
-        room = ChatRoom.objects.get(id=room_id)
-        sender = Customer.objects.get(email=sender_email)
-        message = Message.objects.create(chat_room=room, sender=sender, content=content)
-        
-        pusher_client.trigger(f'chat_{room_id}', 'chat_message', {
-            'id': message.id,
-            'chat_room': room.id,
-            'content': content,
-            'sender': sender.email,
-            'timestamp': message.timestamp.isoformat()
-        })
-        
-        return JsonResponse({'status': 'Message sent'})
-    return JsonResponse({'error': 'Invalid request'}, status=400)
+@method_decorator(csrf_exempt, name='dispatch')
+class SendMessageView(APIView):
+    authentication_classes = [Authentication]
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, *args, **kwargs):
+        try:
+            data = json.loads(request.body)
+            room_id = data['room_id']
+            sender_email = data['sender']
+            content = data['message']
+            
+            room = get_object_or_404(ChatRoom, id=room_id)
+            sender = get_object_or_404(Customer, email=sender_email)
+            message = Message.objects.create(chat_room=room, sender=sender, content=content)
+            
+            pusher_client.trigger(f'chat_{room_id}', 'chat_message', {
+                'id': message.id,
+                'chat_room': room.id,
+                'content': content,
+                'sender': sender.email,
+                'timestamp': message.timestamp.isoformat()
+            })
+            
+            return Response({'status': 'Message sent'}, status=status.HTTP_201_CREATED)
+        except KeyError:
+            return Response({'error': 'Invalid request data'}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
