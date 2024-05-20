@@ -44,7 +44,7 @@ class Product(models.Model):
 class ChatRoom(models.Model):
     member1 = models.ForeignKey(Customer, related_name='chatrooms_member1', on_delete=models.CASCADE)
     member2 = models.ForeignKey(Customer, related_name='chatrooms_member2', on_delete=models.CASCADE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, default='da7f872c-25e0-450e-8b59-20b217d65adf')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return f"{self.member1.user.username} and {self.member2.user.username}"

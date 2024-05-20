@@ -293,8 +293,12 @@ class ChatRoomViewSet(ModelViewSet):
         message = data['chat']
         user = request.user
         member1 = Customer.objects.get(user=user.id)
-        product = Product.objects.get(id=data['product_id'])
-        member2 = product.customer
+        if "product_id" in data:
+            product = Product.objects.get(id=data['product_id'])
+            member2 = product.customer
+        else:
+            member2 = Customer.objects.get(email=data['customer'])
+            product = None
         
         try:
             check_chatroom = ChatRoom.objects.filter(Q(member1=member1) & Q(member2=member2) | Q(member1=member2) & Q(member2=member1))
