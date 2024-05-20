@@ -33,9 +33,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
         message = text_data_json['message']
         sender = text_data_json['sender']
 
-        print(message)
-        print(sender)
-
         timestamp = datetime.now().isoformat()
         random_integer = random.randint(1000, 10000)
 
@@ -53,7 +50,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
     @database_sync_to_async
     def get_room(self, room_id):
         room = ChatRoom.objects.get(id=room_id)
-        print(room)
         return room
 
     @database_sync_to_async
