@@ -27,6 +27,8 @@ from django.shortcuts import get_object_or_404
 import json
 from django.http import JsonResponse
 from rest_framework import status
+from django.db.models import OuterRef, Subquery
+
 
 
 def get_rand(length):
@@ -194,7 +196,13 @@ class CustomerLoginView(APIView):
         customer = Customer.objects.get(user=user.id)
         product = Product.objects.filter(customer=customer.id).order_by('-featured')
         chat_messages = Message.objects.filter(Q(chat_room__member1=customer.id) | Q(chat_room__member2=customer.id))
-        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
+
+        latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
+
+        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
+            latest_message_time=Subquery(latest_message.values('timestamp')[:1])
+        ).order_by('-latest_message_time')
+
 
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
@@ -230,7 +238,12 @@ class GetCustomerDetails(APIView):
         customer = Customer.objects.get(user=user.id)
         product = Product.objects.filter(customer=customer.id).order_by('-featured')
         chat_messages = Message.objects.filter(Q(chat_room__member1=customer.id) | Q(chat_room__member2=customer.id))
-        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
+
+        latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
+
+        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
+            latest_message_time=Subquery(latest_message.values('timestamp')[:1])
+        ).order_by('-latest_message_time')
 
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
@@ -276,7 +289,12 @@ class UpdateCustomer(APIView):
 
             product = Product.objects.filter(customer=customer.id).order_by('-featured')
             chat_messages = Message.objects.filter(Q(chat_room__member1=customer.id) | Q(chat_room__member2=customer.id))
-            chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
+
+            latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
+
+            chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
+                latest_message_time=Subquery(latest_message.values('timestamp')[:1])
+            ).order_by('-latest_message_time')
 
             serialized_product = ProductSerializer(product, many=True)
             serialized_customer = CustomerSerializer(customer)
@@ -326,7 +344,12 @@ class ChatRoomViewSet(ModelViewSet):
                 chatroom.save()
 
             chat_messages = Message.objects.filter(Q(chat_room__member1=member1.id) | Q(chat_room__member2=member1.id))
-            chatrooms = ChatRoom.objects.filter(Q(member1=member1) | Q(member2=member1))
+
+            latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
+
+            chatrooms = ChatRoom.objects.filter(Q(member1=member1) | Q(member2=member1)).annotate(
+                latest_message_time=Subquery(latest_message.values('timestamp')[:1])
+            ).order_by('-latest_message_time')
 
             serialized_chat = MessageSerializer(chat_messages, many=True)
             serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
