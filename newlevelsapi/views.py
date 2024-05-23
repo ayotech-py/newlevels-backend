@@ -33,6 +33,8 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_str
 from django.contrib.auth.tokens import default_token_generator
 from django.urls import reverse
+from django.utils.timezone import now
+
 
 
 
@@ -63,8 +65,8 @@ def convertImage(image):
     return image_file
 
 class ProductViewSet(ModelViewSet):
-    """ authentication_classes = [Authentication]
-    permission_classes = [IsAuthenticated] """
+    authentication_classes = [Authentication]
+    permission_classes = [IsAuthenticated]
     
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
@@ -84,7 +86,7 @@ class ProductViewSet(ModelViewSet):
             queryset = super().get_queryset()
             if self.request.method == 'DELETE':
                 return queryset
-            #queryset = queryset.filter(approved=True).order_by('-featured')
+            queryset = queryset.filter(approved__in=[True]).order_by('-featured')
             return queryset
         except Exception as e:
             return Response({"message": "Failed to fetch"})
@@ -164,6 +166,35 @@ class CustomerViewSet(ModelViewSet):
         except Exception as e:
             return Response({"message": "An error occurred"}, status=400)
 
+def chat_message_filter(customer):
+    chat_rooms_member1 = ChatRoom.objects.filter(member1=customer)
+    chat_rooms_member2 = ChatRoom.objects.filter(member2=customer)    
+    chat_room_ids_member1 = chat_rooms_member1.values_list('id', flat=True)
+    chat_room_ids_member2 = chat_rooms_member2.values_list('id', flat=True)    
+    chat_room_ids = list(chat_room_ids_member1) + list(chat_room_ids_member2)    
+    chat_messages = Message.objects.filter(chat_room__id__in=chat_room_ids)
+    return chat_message
+
+def get_chat_rooms_for_customer(customer):
+    chat_rooms = ChatRoom.objects.filter(
+        Q(member1=customer) | Q(member2=customer)
+    )
+    return chat_rooms
+
+def order_chat_rooms_by_latest_message(chat_rooms):
+    return sorted(chat_rooms, key=lambda x: x.latest_message_time, reverse=True)
+
+
+def annotate_chat_rooms_with_latest_message(chat_rooms):
+    chat_rooms_with_latest_message = []
+    for chat_room in chat_rooms:
+        latest_message = Message.objects.filter(chat_room=chat_room).order_by('-timestamp').first()
+        latest_message_time = latest_message.timestamp if latest_message else now()
+        chat_room.latest_message_time = latest_message_time
+        chat_rooms_with_latest_message.append(chat_room)
+    return chat_rooms_with_latest_message
+
+
 class CustomerLoginView(APIView):
     #authentication_classes = [ApiKeyAuthentication]
 
@@ -197,24 +228,31 @@ class CustomerLoginView(APIView):
 
         Jwt.objects.create(user_id=user.id, access=access, refresh=refresh)
 
-        
 
         user_email = User.objects.get(id=user.id).username
         customer = Customer.objects.get(user=user.id)
         product = Product.objects.filter(customer=customer.id).order_by('-featured')
         chat_messages = Message.objects.filter(Q(chat_room__member1=customer.id) | Q(chat_room__member2=customer.id))
 
+        
+        """ chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
+            latest_message_time=Subquery(latest_message.values('timestamp')[:1])
+        ).order_by('-latest_message_time') """
+
+        #chat_messages = chat_message_filter(customer.id)
+
         latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
 
-        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
-            latest_message_time=Subquery(latest_message.values('timestamp')[:1])
-        ).order_by('-latest_message_time')
+        
+        chat_rooms = get_chat_rooms_for_customer(customer.id)
+        chat_rooms = annotate_chat_rooms_with_latest_message(chat_rooms)  
+        chat_rooms = order_chat_rooms_by_latest_message(chat_rooms)
 
 
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
         serialized_chat = MessageSerializer(chat_messages, many=True)
-        serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
+        serialized_chatroom = ChatRoomSerializer(chat_rooms, many=True)
 
 
         context = {
@@ -248,14 +286,18 @@ class GetCustomerDetails(APIView):
 
         latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
 
-        chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
+        """ chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
             latest_message_time=Subquery(latest_message.values('timestamp')[:1])
-        ).order_by('-latest_message_time')
+        ).order_by('-latest_message_time') """
+
+        chat_rooms = get_chat_rooms_for_customer(customer)
+        chat_rooms = annotate_chat_rooms_with_latest_message(chat_rooms)  
+        chat_rooms = order_chat_rooms_by_latest_message(chat_rooms)
 
         serialized_product = ProductSerializer(product, many=True)
         serialized_customer = CustomerSerializer(customer)
         serialized_chat = MessageSerializer(chat_messages, many=True)
-        serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
+        serialized_chatroom = ChatRoomSerializer(chat_rooms, many=True)
 
         context = {
             "product": serialized_product.data,
@@ -299,14 +341,15 @@ class UpdateCustomer(APIView):
 
             latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
 
-            chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer)).annotate(
-                latest_message_time=Subquery(latest_message.values('timestamp')[:1])
-            ).order_by('-latest_message_time')
+            chatrooms = ChatRoom.objects.filter(Q(member1=customer) | Q(member2=customer))
+            chatrooms = annotate_chat_rooms_with_latest_message(chatrooms)
+            chatrooms = order_chat_rooms_by_latest_message(chatrooms)
 
             serialized_product = ProductSerializer(product, many=True)
             serialized_customer = CustomerSerializer(customer)
             serialized_chat = MessageSerializer(chat_messages, many=True)
             serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
+
             context = {
                 "product": serialized_product.data,
                 "customer": serialized_customer.data,
@@ -316,6 +359,7 @@ class UpdateCustomer(APIView):
 
             return Response({"message": "Profile successfully Updated!", "userData": context}, status=200)
         except Exception as e:
+            print(e)
             return Response({"message": "An error occured!"}, status=400)
 
 class ChatRoomViewSet(ModelViewSet):
@@ -329,6 +373,7 @@ class ChatRoomViewSet(ModelViewSet):
         message = data['chat']
         user = request.user
         member1 = Customer.objects.get(user=user.id)
+        product = ''
         if "product_id" in data:
             product = Product.objects.get(id=data['product_id'])
             member2 = product.customer
@@ -336,38 +381,37 @@ class ChatRoomViewSet(ModelViewSet):
             member2 = Customer.objects.get(email=data['customer'])
             product = None
         
-        try:
-            check_chatroom = ChatRoom.objects.filter(Q(member1=member1) & Q(member2=member2) | Q(member1=member2) & Q(member2=member1))
-            if check_chatroom.exists():
-                last_chatroom = check_chatroom.last()
-                last_chatroom.product = product
-                last_chatroom.save()
-                chat_message = Message.objects.create(chat_room=check_chatroom.last(), sender=member1, content=message)
-                chat_message.save()
-            else:
-                chatroom = ChatRoom.objects.create(member1=member1, member2=member2, product=product)
-                chat_message = Message.objects.create(chat_room=chatroom, sender=member1, content=message)
-                chat_message.save()
-                chatroom.save()
+        #try
+        check_chatroom = ChatRoom.objects.filter(Q(member1=member1) & Q(member2=member2) | Q(member1=member2) & Q(member2=member1))
+        if len(list(check_chatroom)) > 0:
+            last_chatroom = check_chatroom.last()
+            last_chatroom.product = product
+            Message.objects.create(chat_room=last_chatroom, sender=member1, content=message).save()
+            last_chatroom.save()
+        else:
+            chatroom = ChatRoom.objects.create(member1=member1, member2=member2, product=product)
+            chatroom.save()
+            chat_message = Message.objects.create(chat_room=chatroom, sender=member1, content=message)
+            chat_message.save()
 
-            chat_messages = Message.objects.filter(Q(chat_room__member1=member1.id) | Q(chat_room__member2=member1.id))
+        chat_messages = Message.objects.filter(Q(chat_room__member1=member1.id) | Q(chat_room__member2=member1.id))
 
-            latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
+        latest_message = Message.objects.filter(chat_room=OuterRef('pk')).order_by('-timestamp')
 
-            chatrooms = ChatRoom.objects.filter(Q(member1=member1) | Q(member2=member1)).annotate(
-                latest_message_time=Subquery(latest_message.values('timestamp')[:1])
-            ).order_by('-latest_message_time')
+        chatrooms = ChatRoom.objects.filter(Q(member1=member1) | Q(member2=member1))
+        chatrooms = annotate_chat_rooms_with_latest_message(chatrooms)  
+        chatrooms = order_chat_rooms_by_latest_message(chatrooms)
 
-            serialized_chat = MessageSerializer(chat_messages, many=True)
-            serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
+        serialized_chat = MessageSerializer(chat_messages, many=True)
+        serialized_chatroom = ChatRoomSerializer(chatrooms, many=True)
 
-            context = {
-                "chats": serialized_chat.data,
-                "chat_rooms": serialized_chatroom.data
-            }
-            return Response({"message": "Message successfully sent", "chatData": context}, status=200)
-        except Exception as e:
-            return Response({"message": "An error occurred"}, status=400)
+        context = {
+            "chats": serialized_chat.data,
+            "chat_rooms": serialized_chatroom.data
+        }
+        return Response({"message": "Message successfully sent", "chatData": context}, status=200)
+        """ except Exception as e:
+            return Response({"message": "An error occurred"}, status=400) """
 
 
 class MessageViewSet(ModelViewSet):

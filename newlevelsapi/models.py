@@ -3,6 +3,7 @@ from djongo import models
 from django.contrib.auth.models import User, auth
 import uuid
 
+
 class Jwt(models.Model):
     user = models.OneToOneField(
         User, related_name="login_user", on_delete=models.CASCADE
@@ -37,6 +38,7 @@ class Product(models.Model):
     featured = models.BooleanField(default=False)
     approved = models.BooleanField(default=False)
     condition = models.CharField(max_length=50, default='Brand New')
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"{Customer.objects.get(id=self.customer.id).name} - {self.title} - Approved: {self.approved} - Featured: {self.featured}"
@@ -50,6 +52,7 @@ class ChatRoom(models.Model):
         return f"{self.member1.user.username} and {self.member2.user.username}"
 
 class Message(models.Model):
+    id = models.AutoField(primary_key=True)
     chat_room = models.ForeignKey(ChatRoom, related_name='messages', on_delete=models.CASCADE)
     sender = models.ForeignKey(Customer, related_name='messages', on_delete=models.CASCADE)
     content = models.TextField()
