@@ -28,6 +28,11 @@ import json
 from django.http import JsonResponse
 from rest_framework import status
 from django.db.models import OuterRef, Subquery
+from django.core.mail import send_mail
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.utils.encoding import force_bytes, force_str
+from django.contrib.auth.tokens import default_token_generator
+from django.urls import reverse
 
 
 
@@ -77,7 +82,9 @@ class ProductViewSet(ModelViewSet):
     def get_queryset(self):
         try:
             queryset = super().get_queryset()
-            queryset = queryset.filter(approved=True).order_by('-featured')
+            if self.request.method == 'DELETE':
+                return queryset
+            #queryset = queryset.filter(approved=True).order_by('-featured')
             return queryset
         except Exception as e:
             return Response({"message": "Failed to fetch"})
@@ -424,3 +431,46 @@ class SendMessageView(APIView):
             return Response({'error': 'Invalid request data'}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class PasswordResetRequestView(APIView):
+    def post(self, request):
+        email = request.data.get('email')
+        try:
+            user = User.objects.get(username=email)
+        except User.DoesNotExist:
+            return Response({'message': 'User with this email does not exist'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        uid = urlsafe_base64_encode(force_bytes(user.pk))
+        token = default_token_generator.make_token(user)
+        reset_link = request.build_absolute_uri(reverse('password_reset_confirm', args=[uid, token]))
+
+        old_base_url = 'https://newlevels-backend.vercel.app/api/password_reset_confirm/'
+        new_base_url = 'https://newlevels-kappa.vercel.app/auth/reset-password/'
+
+        send_mail(
+            'Password Reset Request',
+            f'Click the link to reset your password: {reset_link.replace(old_base_url, new_base_url)}',
+            settings.EMAIL_HOST_USER,
+            [email],
+            fail_silently=False,
+        )
+
+        return Response({'message': 'Password reset link sent to your email'}, status=status.HTTP_200_OK)
+
+
+class PasswordResetConfirmView(APIView):
+    def post(self, request, uidb64, token):
+        try:
+            uid = force_str(urlsafe_base64_decode(uidb64))
+            user = User.objects.get(pk=uid)
+        except (TypeError, ValueError, OverflowError, User.DoesNotExist):
+            user = None
+
+        if user is not None and default_token_generator.check_token(user, token):
+            password = request.data.get('password')
+            user.set_password(password)
+            user.save()
+            return Response({'message': 'Password has been reset successfully!'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'message': 'Invalid link'}, status=status.HTTP_400_BAD_REQUEST)

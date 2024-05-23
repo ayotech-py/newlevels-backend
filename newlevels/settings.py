@@ -67,8 +67,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'newlevelsapi',
+    'rest_framework',
     'corsheaders',
     'cloudinary_storage',
 ]
@@ -124,7 +124,7 @@ WSGI_APPLICATION = 'newlevels.wsgi.application'
     }
 } """
 
-DATABASES = {
+""" DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "verceldb",
@@ -132,26 +132,35 @@ DATABASES = {
         "PASSWORD": "zkB1sx3pOvXa",
         "HOST": "ep-orange-haze-a4jaxczk-pooler.us-east-1.aws.neon.tech",
     }
+} """
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'NewlevelsTestDB',
+        "CLIENT": {
+           "name": 'NewlevelsTestDB',
+           "host": 'mongodb+srv://ldamilare793:svnu7XHdKrpVZH2b@cluster0.skkagmb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+           "username": 'ldamilare793',
+           "password": 'svnu7XHdKrpVZH2b',
+           "authMechanism": "SCRAM-SHA-1",
+        }, 
+    }
 }
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
 
-""" CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-        'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],
-        },
-    },
-} """
-
-""" CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-        'CONFIG': {
-            "hosts": ["redis://:NAIZ3Akc8mf4KMvJvAaxE731Wak00T42@redis-14429.c276.us-east-1-2.ec2.redns.redis-cloud.com:14429/0"],
-        },
-    },
-} """
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ajaomalik2018@gmail.com'
+EMAIL_HOST_PASSWORD = 'mrqfvvadwrxfxrbo'
 
 
 # Password validation

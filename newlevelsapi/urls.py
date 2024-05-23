@@ -16,6 +16,10 @@ urlpatterns = [
     path("get-customer-data/", GetCustomerDetails.as_view()),
     path("update-customer-data/", UpdateCustomer.as_view()),
     path('send_message/', SendMessageView.as_view(), name='send_message'),
+    path('password_reset/', PasswordResetRequestView.as_view(), name='password_reset_request'),
+    path('password_reset_confirm/<uidb64>/<token>/', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
+
+
 
     #path('send_message', send_message, name='send_message'),
 
