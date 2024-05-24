@@ -10,7 +10,7 @@ class ProductSerializer(serializers.ModelSerializer):
     customer = CustomerSerializer()
     class Meta:
         model = Product
-        exclude = []
+        exclude = ['unique_token']
 
 class CustomerLoginSerializer(serializers.Serializer):
     email = serializers.EmailField()

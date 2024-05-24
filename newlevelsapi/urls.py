@@ -18,10 +18,8 @@ urlpatterns = [
     path('send_message/', SendMessageView.as_view(), name='send_message'),
     path('password_reset/', PasswordResetRequestView.as_view(), name='password_reset_request'),
     path('password_reset_confirm/<uidb64>/<token>/', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
-
-
-
-    #path('send_message', send_message, name='send_message'),
+    path('approve/<uuid:unique_token>/', ApproveProduct.as_view(), name='approve_product'),
+    path('feature/<uuid:unique_token>/', FeatureProduct.as_view(), name='feature_product'),
 
     #path("get-data/", GetMemberData.as_view()),
 ]

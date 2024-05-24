@@ -34,6 +34,7 @@ from django.utils.encoding import force_bytes, force_str
 from django.contrib.auth.tokens import default_token_generator
 from django.urls import reverse
 from django.utils.timezone import now
+from decimal import Decimal
 
 
 
@@ -65,8 +66,8 @@ def convertImage(image):
     return image_file
 
 class ProductViewSet(ModelViewSet):
-    authentication_classes = [Authentication]
-    permission_classes = [IsAuthenticated]
+    """ authentication_classes = [Authentication]
+    permission_classes = [IsAuthenticated] """
     
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
@@ -102,13 +103,24 @@ class ProductViewSet(ModelViewSet):
             product = Product.objects.create(
                 title=data['title'],
                 description=data['description'],
-                price=data['price'],
+                price=Decimal(data['price']),
                 category=data['category'],
                 condition=data['condition'],
                 image=image,
                 customer=customer
             )
             product.save()
+            product.image = f'https://res.cloudinary.com/di040wc0d/image/upload/v1/{product.image}'
+            product_data = vars(product)
+            product_details = '\n'.join([f"{key}: {value}" for key, value in product_data.items()])
+            
+            send_mail(
+                'New Product Posted',
+                f'Customer: {product.customer.name}\nProduct Details:\n{product_details}\nClick the link to approve product: https://newlevels-backend.vercel.app/api/approve/{product.unique_token}/\nClick the link to feature product: https://newlevels-backend.vercel.app/api/feature/{product.unique_token}/',
+                settings.EMAIL_HOST_USER,
+                [settings.EMAIL_HOST_USER],
+                fail_silently=False,
+            )
             return Response({"message": "Product successfull added!", "product": ProductSerializer(product).data}, status=200)
         except Exception as e:
             return Response({"message": "An error occured"}, status=400)
@@ -138,6 +150,27 @@ class ProductViewSet(ModelViewSet):
             product.save()
         return Response({"message": "Ads successfully Updated!", 'product': ProductSerializer(product).data})
 
+class ApproveProduct(APIView):
+    def get(self, request, unique_token):
+        try:
+            product = Product.objects.get(unique_token=unique_token)
+        except Product.DoesNotExist:
+            return Response({"error": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
+        
+        product.approved = True
+        product.save()
+        return Response({"message": "Product approved successfully."}, status=status.HTTP_200_OK)
+
+class FeatureProduct(APIView):
+    def get(self, request, unique_token):
+        try:
+            product = Product.objects.get(unique_token=unique_token)
+        except Product.DoesNotExist:
+            return Response({"error": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
+        
+        product.featured = True
+        product.save()
+        return Response({"message": "Product featured successfully."}, status=status.HTTP_200_OK)
 
 class CustomerViewSet(ModelViewSet):
     authentication_classes = [ApiKeyAuthentication]
