@@ -1,0 +1,3040 @@
+[{
+  "_id": {
+    "$oid": "64d8541cc580c143ac6d934d"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "3af880b71230403cbb704e83b001a8e2",
+  "product_id": "My Book",
+  "title": "sherlock holmes",
+  "price": 4500,
+  "description": "MY book ",
+  "image": {
+    "success": true,
+    "public_id": "hwb8moiktlsjmimn3px9",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1691898879/hwb8moiktlsjmimn3px9.jpg"
+  },
+  "category": "Book",
+  "condition": 4,
+  "seller_name": "Max",
+  "phone": {
+    "$numberLong": "8797493898"
+  },
+  "location": "Newhall",
+  "createdAt": {
+    "$date": "2023-08-13T03:55:08.630Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T03:55:08.630Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657fa233a7eaee00352a417d"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "75262ab463034450ab33fa5927bb9038",
+  "product_id": "PRODlqa8wp9u",
+  "title": "screenwriter",
+  "price": 50000,
+  "description": "Script writer, dm",
+  "image": {
+    "success": true,
+    "public_id": "rqbawrmozl5xne3gzyim",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1702863389/rqbawrmozl5xne3gzyim.jpg"
+  },
+  "category": "Services",
+  "condition": 5,
+  "seller_name": "Damon damonii",
+  "phone": {
+    "$numberLong": "9071574097"
+  },
+  "location": "biobaku",
+  "createdAt": {
+    "$date": "2023-12-18T01:36:51.213Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-18T01:36:51.213Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65847e2f46af2c003598e752"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "824858b9229949aa9ae2ef1824566f1e",
+  "product_id": "PRODlqfiies2",
+  "title": "social media manager",
+  "price": 15000,
+  "description": "\nManage Abule village’s presence on social media,\n\nMonitor, analyze social media perfomance and stay up-to-date with the latest social media trends",
+  "image": {
+    "success": true,
+    "public_id": "eogqzuuzjydbdp7y0kki",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1703181392/eogqzuuzjydbdp7y0kki.jpg"
+  },
+  "category": "Jobs",
+  "condition": 5,
+  "seller_name": "Abula Village",
+  "phone": {
+    "$numberLong": "8188213795"
+  },
+  "location": "Jaja Complex Unilag",
+  "createdAt": {
+    "$date": "2023-12-21T18:04:31.478Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-21T18:04:31.478Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659323b2cc1ebc0035a41bde"
+  },
+  "checked": true,
+  "featured": true,
+  "sold": 0,
+  "seller_id": "afede6073cf041e78aeb0d08ba420800",
+  "product_id": "PRODlqvdzuvz",
+  "title": "tote bags",
+  "price": 2500,
+  "description": "An affordable quality bag with any design you want",
+  "image": {
+    "success": true,
+    "public_id": "mkgdprtwzvmgdf2jjwjk",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704141608/mkgdprtwzvmgdf2jjwjk.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Tayor",
+  "phone": {
+    "$numberLong": "9085498486"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-01T20:42:26.225Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-01T20:42:26.225Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659324b7cc1ebc0035a41bef"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "afede6073cf041e78aeb0d08ba420800",
+  "product_id": "PRODlqve5gjq",
+  "title": "cargo pants",
+  "price": 9000,
+  "description": "Affordable cargos with different styles and designs",
+  "image": {
+    "success": true,
+    "public_id": "b8njgovxlecyzvqgtiae",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704142114/b8njgovxlecyzvqgtiae.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Tayor",
+  "phone": {
+    "$numberLong": "9085498486"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-01T20:46:47.572Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-01T20:48:40.694Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593ee60f196c10035b989a8"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw8vyea",
+  "title": "gucci leather cut shoe",
+  "price": 19500,
+  "description": "Available in size 40-46",
+  "image": {
+    "success": true,
+    "public_id": "eix2nzereu4pfr7qd7vy",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704193534/eix2nzereu4pfr7qd7vy.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:07:12.247Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:07:12.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593ef24f196c10035b989af"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw905sn",
+  "title": "timberland suede shoe",
+  "price": 19500,
+  "description": "Product is available From size 40-46",
+  "image": {
+    "success": true,
+    "public_id": "nncxrqdrwzliopx1thla",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704193672/nncxrqdrwzliopx1thla.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:10:28.453Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:10:28.453Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593ef8ff196c10035b989b6"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw92gq0",
+  "title": "boss double lid sole sneak",
+  "price": 26500,
+  "description": "Available in size 40-46",
+  "image": {
+    "success": true,
+    "public_id": "jdmsl7uyxuupgfnbme7m",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704193856/jdmsl7uyxuupgfnbme7m.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:12:15.928Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:12:15.928Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593efe0f196c10035b989bd"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw946zv",
+  "title": "sales fashion",
+  "price": 21500,
+  "description": "Available in size 40-46",
+  "image": {
+    "success": true,
+    "public_id": "hiiknjaqqk7zv5xl4sgj",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704193961/hiiknjaqqk7zv5xl4sgj.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:13:36.641Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:13:36.641Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f077f196c10035b989c7"
+  },
+  "checked": true,
+  "featured": true,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw97f3j",
+  "title": "air force 1 rope lace sneak",
+  "price": 12500,
+  "description": "Available from size 38-46",
+  "image": {
+    "success": true,
+    "public_id": "yb0fbco0u3d1klrowaid",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194100/yb0fbco0u3d1klrowaid.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:16:07.101Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:16:07.101Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f0ddf196c10035b989ce"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw99m2z",
+  "title": "sb nike sneak",
+  "price": 15500,
+  "description": "Available from size 40-46",
+  "image": {
+    "success": true,
+    "public_id": "ytyunjmzicaqgeiwrhw0",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194192/ytyunjmzicaqgeiwrhw0.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:17:49.464Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:17:49.464Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f13df196c10035b989d5"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9bohw",
+  "title": "f.g caterpillar sole shoe",
+  "price": 19500,
+  "description": "Available from size 35-41",
+  "image": {
+    "success": true,
+    "public_id": "o4pqqkzvqnatwfsh5s7c",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194360/o4pqqkzvqnatwfsh5s7c.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:19:25.906Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:19:25.906Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f1a7f196c10035b989dc"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9dy2k",
+  "title": "givenchy caterpillar sole shoe",
+  "price": 19500,
+  "description": "Available from size 35-41",
+  "image": {
+    "success": true,
+    "public_id": "aving9riirmmlmevhqha",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194392/aving9riirmmlmevhqha.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:21:11.626Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:21:11.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f1f0f196c10035b989e3"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9fib9",
+  "title": "grey nike airforce 1",
+  "price": 16500,
+  "description": "Available from size 40-47",
+  "image": {
+    "success": true,
+    "public_id": "n92qa0mwklrwdjkfcya5",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194494/n92qa0mwklrwdjkfcya5.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:22:24.515Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:22:24.515Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f245f196c10035b989ea"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9hbki",
+  "title": "nike airforce 1",
+  "price": 14500,
+  "description": "Available from size 38-43",
+  "image": {
+    "success": true,
+    "public_id": "j1vlvdbm9i4jwgrfldnb",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194575/j1vlvdbm9i4jwgrfldnb.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:23:49.088Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:23:49.088Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f28af196c10035b989f1"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9ist7",
+  "title": "whipped nike airforce 1",
+  "price": 19500,
+  "description": "Availability from size 40-46",
+  "image": {
+    "success": true,
+    "public_id": "jdq139kwhuxhovsxfyj3",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194653/jdq139kwhuxhovsxfyj3.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:24:58.089Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:24:58.089Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f2f6f196c10035b989fa"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9l4p8",
+  "title": "nike airforce 1",
+  "price": 15500,
+  "description": "Available in size 40-46",
+  "image": {
+    "success": true,
+    "public_id": "cklibdkbyvicmanm0hux",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194716/cklibdkbyvicmanm0hux.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:26:46.812Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:26:46.812Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f364f196c10035b98a01"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9nh8q",
+  "title": "lykie square toe fabric strap heel",
+  "price": 13500,
+  "description": "Available in sizes 36-41",
+  "image": {
+    "success": true,
+    "public_id": "haoujivbtvrbkskdnk4m",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194824/haoujivbtvrbkskdnk4m.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:28:36.375Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:28:36.375Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f3c4f196c10035b98a08"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9pjgd",
+  "title": "zara square toe spiral heel",
+  "price": 13500,
+  "description": "Available in size 37-41",
+  "image": {
+    "success": true,
+    "public_id": "kynehbtpcipommhicqja",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704194943/kynehbtpcipommhicqja.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:30:12.557Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:30:12.557Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f41ff196c10035b98a0f"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9rhw1",
+  "title": "zara square toe spiral heel",
+  "price": 13500,
+  "description": "Available in size 37-41",
+  "image": {
+    "success": true,
+    "public_id": "k6iquxbvysjjbatfdnd9",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195057/k6iquxbvysjjbatfdnd9.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:31:43.840Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:31:43.840Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f46df196c10035b98a16"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9t5n7",
+  "title": "zara 9cm sharp toe heel",
+  "price": 15500,
+  "description": "Available from sizes 37-42",
+  "image": {
+    "success": true,
+    "public_id": "qavooq8gowqrq9guve1h",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195131/qavooq8gowqrq9guve1h.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:33:01.281Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:33:01.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f4c5f196c10035b98a1d"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9v1sx",
+  "title": "ankle strap mule tie stiletto",
+  "price": 13500,
+  "description": "Available from size 37-41",
+  "image": {
+    "success": true,
+    "public_id": "jipokjitglk8e9rtpetn",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195208/jipokjitglk8e9rtpetn.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:34:29.616Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:34:29.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f51df196c10035b98a26"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9wx8c",
+  "title": "zara crystal sandal heel",
+  "price": 13500,
+  "description": "Available from sizes 37-41",
+  "image": {
+    "success": true,
+    "public_id": "eqb0f5iurckwj99ce0ao",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195301/eqb0f5iurckwj99ce0ao.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:35:57.001Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:35:57.001Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f556f196c10035b98a2d"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqw9y5tf",
+  "title": "zara",
+  "price": 15500,
+  "description": "Available from sizes 37-41",
+  "image": {
+    "success": true,
+    "public_id": "kma9qddoejttptb4u8po",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195376/kma9qddoejttptb4u8po.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:36:54.784Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:36:54.784Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f5b9f196c10035b98a34"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqwa0ab0",
+  "title": "s-cut slippers heel",
+  "price": 13500,
+  "description": "Available from sizes 37-41",
+  "image": {
+    "success": true,
+    "public_id": "tadssor63vturc8t3tft",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195446/tadssor63vturc8t3tft.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:38:33.914Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:38:33.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f612f196c10035b98a3b"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqwa26ov",
+  "title": "tory burch tote bag",
+  "price": 18000,
+  "description": "Available as seen",
+  "image": {
+    "success": true,
+    "public_id": "f3k4r0r2ersebthjswjl",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195539/f3k4r0r2ersebthjswjl.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:40:02.540Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:40:02.540Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f6aef196c10035b98a42"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqwa5j9u",
+  "title": "versace bow bag",
+  "price": 13000,
+  "description": "You can surely count on this lovely bow satchel by Versace for a statement look.",
+  "image": {
+    "success": true,
+    "public_id": "kmimvzozlgeoe3cz65f2",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195626/kmimvzozlgeoe3cz65f2.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:42:38.818Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:42:38.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f70af196c10035b98a49"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqwa7hmo",
+  "title": "fashion chest bag",
+  "price": 11000,
+  "description": "This elegant beauty features dual handles, a statement bow detail with the brand logo in the front, a zip closure that leads to a satin-lined interior and a rear zip pocket for convenience.",
+  "image": {
+    "success": true,
+    "public_id": "wuqiipnsawexhfdvu0qx",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195781/wuqiipnsawexhfdvu0qx.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:44:10.002Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:44:10.002Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f7a0f196c10035b98a52"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqwaaphc",
+  "title": "birkin",
+  "price": 18500,
+  "description": "The Birkin is available in a rare heritage leather with unique character.Available as seen",
+  "image": {
+    "success": true,
+    "public_id": "t4lr5bsfsia7xoa77hkk",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704195874/t4lr5bsfsia7xoa77hkk.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:46:40.141Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:46:40.141Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593f84bf196c10035b98a59"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlqwaedo2",
+  "title": "gucci dionysus leather bag",
+  "price": 14000,
+  "description": "The closure is further enhanced with black Swarovski crystals. The sliding chain strap can be worn multiple ways, changing between a shoulder and a top handle bag. Made in textured, resistant leather.",
+  "image": {
+    "success": true,
+    "public_id": "eppdxq0wrdswtm4njwk4",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704196028/eppdxq0wrdswtm4njwk4.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-02T11:49:31.457Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T11:49:31.457Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595417edc905d0035ace689"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxokokm",
+  "title": "cosrx snail mucin moisturizer",
+  "price": 14000,
+  "description": "All in one COSRX Snail Mucin 96% Power Repairing Essence 3.38 Fl.oz 100ml, Hydrating Serum For Face With Snail Secretion Filtrate For Dull Skin & Fine Lines, Korean Skincare. Call For Further Recommendations ",
+  "image": {
+    "success": true,
+    "public_id": "szm4tihxylsbqovgqe2s",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704280360/szm4tihxylsbqovgqe2s.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:14:06.369Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:14:06.369Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65954222dc905d0035ace690"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxoo7hm",
+  "title": "dr rashel hayluronic acid moisturizer",
+  "price": 4000,
+  "description": "DR.RASHEL Hyaluronic Face Cream For Women and Men (380 Ml) | All Skin Types |Soft and Healthy Skin | Repairing & Nourishment | Deep Hydration & Moisturization | 100% Vegan | Paraben Free",
+  "image": {
+    "success": true,
+    "public_id": "uiapy3tyd4eazt4jopib",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704280488/uiapy3tyd4eazt4jopib.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:16:50.807Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:16:50.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659542c3dc905d0035ace697"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxornnm",
+  "title": "beauty formula brightening vitamin c",
+  "price": 3500,
+  "description": "Moisturizer Actively formulated with a Vitamin Complex that includes vitamins B, C & E to provide the goodness your skin needs to thrive, looking bright, fresh, and invigorated.",
+  "image": {
+    "success": true,
+    "public_id": "dvb8lmij9myclictjyea",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704280637/dvb8lmij9myclictjyea.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:19:31.729Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:19:31.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65954336dc905d0035ace69e"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxou3ul",
+  "title": "dr rashel vitamin c facial soap",
+  "price": 2500,
+  "description": "100g Benefits : Dr. Rashel Vitamin C soap that contains nourishing ingredients and vitamin c to brighten skin as well as reduce wrinkles. This specially gentle soap can clean skin deeply to the pores, nourish skin to be radiant and smooth, reduce freckles, and dark spots, reduce oiliness on the...",
+  "image": {
+    "success": true,
+    "public_id": "qtl7e8raxqwzth2u5qka",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704280794/qtl7e8raxqwzth2u5qka.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:21:26.031Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:21:26.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659543a9dc905d0035ace6a7"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxowknf",
+  "title": "estelin vitamin c and turmeric serum",
+  "price": 5000,
+  "description": "30ml Benefits : Our brighten serum promotes a more flawless complexion. Infused with advanced vitamin c and golden turmeric for instant vitality and antioxidant defense. Vitamin c is a naturally-occurring antioxidant that is known to fight free radicals on skin from visible damage that you see in the mirror as fine...",
+  "image": {
+    "success": true,
+    "public_id": "lh0d3fpcheyyaosv8wuh",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704280994/lh0d3fpcheyyaosv8wuh.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:23:21.114Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:23:21.114Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65954410dc905d0035ace6ae"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxoysca",
+  "title": "dr rashel sulfur soap",
+  "price": 2500,
+  "description": "DR RASHEL GINSENG AND SULFUR SOAP helps to naturally lighten the skin pigmentation by clearing away the dead cells by exfoliating the skin.",
+  "image": {
+    "success": true,
+    "public_id": "wpyyf48oxu4wnsxqllgs",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281034/wpyyf48oxu4wnsxqllgs.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:25:04.391Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:25:04.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659544c3dc905d0035ace6b5"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxp2mqm",
+  "title": "dr davey aplha aryans lightening body lotion",
+  "price": 8000,
+  "description": "Dr Davey ARBUTIN & WHITAMIN body Lotion with Fresh Citrus Clears Scars, Whitens, clears acne & acne marks, Clears black spots, hydrates, smoothens, glows & makes the skin supple & has a long lasting pleasant smell",
+  "image": {
+    "success": true,
+    "public_id": "au0g5icbkxtkyclbgaqu",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281142/au0g5icbkxtkyclbgaqu.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:28:03.755Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:28:03.755Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595451ddc905d0035ace6bc"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxp4joa",
+  "title": "roushun 30 days miracle toner",
+  "price": 5000,
+  "description": "Works as an effective exfoliator to leave skin cleaner and more radiant than before. Clears Acne and breakouts and tightens pores.",
+  "image": {
+    "success": true,
+    "public_id": "w2fxgvn6uov2ibxcbvir",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281304/w2fxgvn6uov2ibxcbvir.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:29:33.097Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:29:33.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659545bcdc905d0035ace6c3"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxp7yoi",
+  "title": "glutahione lightening serum",
+  "price": 3000,
+  "description": "Whiten Serum With Vitamin CGlutathione and Alpha Arbutin. It is effective in reducing the appearance of darken spots, blemishes, frackles, pimples and blackheads. Stabilized Vitamin C and Vitamin B3 goes beyond mere bleaching of the skin. It actually reduces the damage that stimulates the excess production of Melanin.",
+  "image": {
+    "success": true,
+    "public_id": "sxb3crfugwcvlwcjbkxg",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281397/sxb3crfugwcvlwcjbkxg.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:32:12.515Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:32:12.515Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595463fdc905d0035ace6cc"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxparna",
+  "title": "face facts ceramide hydrating cleanser",
+  "price": 6000,
+  "description": "Be kind to your skin with our Ceramide Gel Cleanser. Our hydrating gel helps deeply cleanse even the most dry and sensitive skin. Formulated with our skin barrier complex of 5 Ceramides, moisture-locking Hyaluronic Acid, hydrating Glycerin and skin soothing Oats, it washes away impurities and makeup, leaving skin clean and hydrated, whilst helping strengthen your protective skin barrier",
+  "image": {
+    "success": true,
+    "public_id": "egekjmfyntmcme42s0gp",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281568/egekjmfyntmcme42s0gp.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:34:23.364Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:34:23.364Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659546b2dc905d0035ace6d3"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxpd8gm",
+  "title": "anti freckles niacinamide serum",
+  "price": 4000,
+  "description": "Thanks to the niacinamide included in the composition, it gently whitens the skin, relieving it of age spots, freckles and sunburn irregularities. The tool helps to eliminate acne, narrows pores and fights premature aging.",
+  "image": {
+    "success": true,
+    "public_id": "gncxr7ohex79byb32fr8",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281687/gncxr7ohex79byb32fr8.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:36:18.471Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:36:18.471Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65954705dc905d0035ace6da"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxpf0gi",
+  "title": "hydroquinone cream",
+  "price": 7500,
+  "description": "Melalite Forte Cream is used in the treatment of melasma. It is a skin-lightening medicine that lightens the darkened skin patches and spots(hyperpigmentation). It reduces the amount of skin-darkening pigment called melanin in the skin. It helps in reversible depigmentation of the skin.\n",
+  "image": {
+    "success": true,
+    "public_id": "vcqwcz7zi1qjytwpksze",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281797/vcqwcz7zi1qjytwpksze.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:37:41.410Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:37:41.410Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595474cdc905d0035ace6e1"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxpgj04",
+  "title": "veer gold dark spots removal soap",
+  "price": 2500,
+  "description": "This veet gold soap contains turmeric, which is known to naturally reduce dark spots, providing you with an even, luminous skin tone.As an added benefit, turmeric gained also help to even out skin tone. This soap is perfect for achieving a luminous, radiant complexion.",
+  "image": {
+    "success": true,
+    "public_id": "zhgwal8nsllqrpyxojpg",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281885/zhgwal8nsllqrpyxojpg.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:38:52.098Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:38:52.098Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65954788dc905d0035ace6e8"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxphtav",
+  "title": "jam acne soap",
+  "price": 1000,
+  "description": "This Acne soap it effectively removes pigment spots, dark spots and acne blemishes. Helps in lightening and balancing skin color",
+  "image": {
+    "success": true,
+    "public_id": "wkb1elmw3gtdooxojs0k",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704281949/wkb1elmw3gtdooxojs0k.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:39:52.102Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:39:52.102Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65954802dc905d0035ace6ef"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxpkfkb",
+  "title": "skinaqua spf 50 korean sunscreen",
+  "price": 12000,
+  "description": "This sunscreen can be used on the face and body to provide protection against UVA/UVB for the transparent finish. It is in lightweight texture and gives you a refreshing feeling which resembles the application of toner for comfortable and re-hydrating results. ",
+  "image": {
+    "success": true,
+    "public_id": "tq2kuvk73so4u7oqw5lc",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704282011/tq2kuvk73so4u7oqw5lc.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:41:54.265Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:41:54.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595486bdc905d0035ace6f8"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "product_id": "PRODlqxpmoqd",
+  "title": "estelin spf 80 sunscreen",
+  "price": 6000,
+  "description": "100g Benefits : Ultra-Light hydrating invisible sunscreen provides high protection against harmful UVA/UVB and sunburn, and early signs of aging caused by sun exposure, repairing sun-induced wrinkles and fine lines. It has a non-greasy and fast-absorbing texture",
+  "image": {
+    "success": true,
+    "public_id": "kzwc4ifup1dgou3ese47",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704282131/kzwc4ifup1dgou3ese47.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Ballyskincare",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "location": "Faculty of social sciences",
+  "createdAt": {
+    "$date": "2024-01-03T11:43:39.458Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T11:43:39.458Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595b066c446fc003527bbc7"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "a506412fcbbc4499960d4cad7c5d89ee",
+  "product_id": "PRODlqy5h8af",
+  "title": "hairband",
+  "price": 500,
+  "description": "Available in all colors, you can never go wrong with one of these cuties That add styles and colours to your outfit 🥰",
+  "image": {
+    "success": true,
+    "public_id": "gjaavcplsjelsv9dodar",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704308760/gjaavcplsjelsv9dodar.jpg"
+  },
+  "category": "Fashion",
+  "condition": 1,
+  "seller_name": "Official_Smurz",
+  "phone": {
+    "$numberLong": "9078900661"
+  },
+  "location": "FSS",
+  "createdAt": {
+    "$date": "2024-01-03T19:07:18.729Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T19:07:18.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595b0dac446fc003527bbd1"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "a506412fcbbc4499960d4cad7c5d89ee",
+  "product_id": "PRODlqy5jp8s",
+  "title": "absolute lipgloss",
+  "price": 300,
+  "description": "Wanna have a taste of longlasting lipgloss during this harmattan season, try one of These from...\nYours Smurzly💜",
+  "image": {
+    "success": true,
+    "public_id": "ljmdczjb5yyabv8sngzd",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704308878/ljmdczjb5yyabv8sngzd.jpg"
+  },
+  "category": "Fashion",
+  "condition": 1,
+  "seller_name": "Official_Smurz",
+  "phone": {
+    "$numberLong": "9078900661"
+  },
+  "location": "FSS",
+  "createdAt": {
+    "$date": "2024-01-03T19:09:14.013Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T19:09:14.013Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595b1bdc446fc003527bbdc"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "a506412fcbbc4499960d4cad7c5d89ee",
+  "product_id": "PRODlqy5okn4",
+  "title": "clawclips",
+  "price": 800,
+  "description": "Wanna Hold your Hair without scrunchies or hair packers?....these cuties are Here to help save the day!!!.....yours Smurzly💜",
+  "image": {
+    "success": true,
+    "public_id": "coepeqhjhawomploeouy",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704308972/coepeqhjhawomploeouy.jpg"
+  },
+  "category": "Fashion",
+  "condition": 1,
+  "seller_name": "Official_Smurz",
+  "phone": {
+    "$numberLong": "9078900661"
+  },
+  "location": "FSS",
+  "createdAt": {
+    "$date": "2024-01-03T19:13:01.326Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T19:13:01.326Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595b216c446fc003527bbe7"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "a506412fcbbc4499960d4cad7c5d89ee",
+  "product_id": "PRODlqy5qhox",
+  "title": "scrunchies",
+  "price": 300,
+  "description": "Do away with rubber bands!!!\nYours Smurzly💜",
+  "image": {
+    "success": true,
+    "public_id": "ulhx8lf0mnxwxym1szqg",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704309219/ulhx8lf0mnxwxym1szqg.jpg"
+  },
+  "category": "Fashion",
+  "condition": 1,
+  "seller_name": "Official_Smurz",
+  "phone": {
+    "$numberLong": "9078900661"
+  },
+  "location": "FSS",
+  "createdAt": {
+    "$date": "2024-01-03T19:14:30.822Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T19:14:30.822Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65980308fc41e700357cdabd"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr0o3y9u",
+  "title": "clark sandal shoe",
+  "price": 42000,
+  "description": "It has a Buckle strap for easy Wearing with closure made with a Polishable Leather. Footbed is comfy soft with an high quality sole. ",
+  "image": {
+    "success": true,
+    "public_id": "kretauutgi9eeat0wy0w",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704460698/kretauutgi9eeat0wy0w.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-05T13:24:24.289Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-05T13:24:24.289Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6598054ffc41e700357cdacb"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr0oggeg",
+  "title": "clark birkin sandal",
+  "price": 20000,
+  "description": "It has a Buckle strap For easy wearing. The closure is beautified with a well skimmed Leather. Footbed is Comfy and the sole is Flexible. ",
+  "image": {
+    "success": true,
+    "public_id": "qm9abtd3o3ukydivujp4",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704461445/qm9abtd3o3ukydivujp4.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-05T13:34:07.640Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-05T13:34:07.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65980c0cfc41e700357cdaf2"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr0phfn4",
+  "title": "steve.r corporate shoe",
+  "price": 39000,
+  "description": "Closure is of a Shinny  quality Leather × dull face cloth material. It has a buckle strap for easy wearing. Footbed is comfy. Sole is Penciled carved.",
+  "image": {
+    "success": true,
+    "public_id": "prtxn1i85yzl9jekekng",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704463081/prtxn1i85yzl9jekekng.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-05T14:02:53.004Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-05T14:02:53.004Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659ab724ab187d00357d007f"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr3llj2c",
+  "title": "bottega veneta",
+  "price": 30000,
+  "description": "Closure is enhanced with a quality polishable leather. Footbed is comfy and sole is Firm Durability💯.",
+  "image": {
+    "success": true,
+    "public_id": "ig2o2lvzmrltaarybcqd",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704638067/ig2o2lvzmrltaarybcqd.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-07T14:37:24.116Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-07T14:37:24.116Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659ab828ab187d00357d0086"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr3lr420",
+  "title": "ogyi™🔥🥵💯💥",
+  "price": 18000,
+  "description": "Sneak is of high quality,Sole is comfortable and closure is enhanced with a thick lace that is adjustable for easy wearing and styling",
+  "image": {
+    "success": true,
+    "public_id": "sw9d0yqoehjdrvgf87ar",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704638333/sw9d0yqoehjdrvgf87ar.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-07T14:41:44.539Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-07T14:41:44.539Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659ab918ab187d00357d008f"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr3lw9b0",
+  "title": "air jordan 💯🥵💥💥 (michae.b)",
+  "price": 20000,
+  "description": "It's not your regular 💯\nSneak is of high quality. Closure is made of the best material. Sole is think not flat and very comfy",
+  "image": {
+    "success": true,
+    "public_id": "io2wjxvv3edf5wss0hgr",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704638631/io2wjxvv3edf5wss0hgr.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-07T14:45:44.626Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-07T14:45:44.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659ab9e0ab187d00357d0096"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr3m0jq0",
+  "title": "taylor's all star ⭐ high top 💥💥",
+  "price": 11500,
+  "description": "It has an high platform sole, footbed comfortable and welcoming. Closure material is jean-kind. Lace is ankle length. Condition 💯",
+  "image": {
+    "success": true,
+    "public_id": "xgv5uqswbr9uzc2exefa",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704638776/xgv5uqswbr9uzc2exefa.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-07T14:49:04.745Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-07T14:49:04.745Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659abaafab187d00357d009d"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlr3m4zf2",
+  "title": "nyr: its not your regular 💥💥💯💯",
+  "price": 20000,
+  "description": "Sneak has an high platform sole. Closure is futher enhanced with a thick lace which can be adjusted for easy Wearing. Shoe material is Cleanable.",
+  "image": {
+    "success": true,
+    "public_id": "yfgotbwqnsjatje5u1gx",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704638977/yfgotbwqnsjatje5u1gx.png"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-07T14:52:31.709Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-07T14:52:31.709Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659fed411b1d450035d89026"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlr98xs7y",
+  "title": "queen set piano wig 100% human hair",
+  "price": 40500,
+  "description": "13x4 Bob\n10\" #40,500\n12\" #44,500\n14\" #50,000\n16\" #60,000\n",
+  "image": {
+    "success": true,
+    "public_id": "deijcdutcfp25twz0r4d",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1704979414/deijcdutcfp25twz0r4d.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-11T13:29:37.861Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-11T13:29:37.861Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a24fe019896e0035f4eebb"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlrbu08ed",
+  "title": "zara low inch heel",
+  "price": 14000,
+  "description": "Leather material is Made from the finest. It has a 2 inch low sharpened heel.  ",
+  "image": {
+    "success": true,
+    "public_id": "h38nutqajdrbw3oar46e",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705135864/h38nutqajdrbw3oar46e.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-13T08:54:56.483Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-13T08:54:56.483Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a2523919896e0035f4eecb"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlrbud4gj",
+  "title": "zara",
+  "price": 15500,
+  "description": "Sole is Flat. The closure is Beautified with a bow, and material is made with jeans.",
+  "image": {
+    "success": true,
+    "public_id": "mansct09pflrltlhklot",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705136503/mansct09pflrltlhklot.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-13T09:04:57.827Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-13T09:04:57.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a4588bee18ba00342a3ead"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre1d4hu",
+  "title": "fendi platform slide",
+  "price": 17500,
+  "description": "The material is enhanced with FENDI logo. The sole is platform high with footbed made with leather ",
+  "image": {
+    "success": true,
+    "public_id": "n70pjhmmei4z3inmhpnb",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705269260/n70pjhmmei4z3inmhpnb.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T21:56:27.599Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T21:56:27.599Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a459b7ee18ba00342a3eb4"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre1jjvi",
+  "title": "zara strap summer slip",
+  "price": 14500,
+  "description": "The front is made in many lines held Together. It is made with a shiny face leather. The slip is comfortable with an high guarantee of not compressing your foot.",
+  "image": {
+    "success": true,
+    "public_id": "wbsgammoolsfh5k4yk3l",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705269495/wbsgammoolsfh5k4yk3l.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T22:01:27.405Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T22:01:27.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a45a9aee18ba00342a3ebd"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre1of0x",
+  "title": "gucci full cover heel",
+  "price": 15000,
+  "description": "The tip of the Shoe is slightly edgy. However it wouldn't make your toes uncomfortable. Heel is low and well balanced ",
+  "image": {
+    "success": true,
+    "public_id": "mkgaqwqqyrtuv4shbn3o",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705269764/mkgaqwqqyrtuv4shbn3o.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T22:05:14.407Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T22:05:14.407Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a45bc9ee18ba00342a3ece"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre1ux3z",
+  "title": "forever 21",
+  "price": 14500,
+  "description": "Leather is padded with a platform sole. It's very comfortable and not heavy to foot.",
+  "image": {
+    "success": true,
+    "public_id": "zoabigthvj0xrkisinpu",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705270097/zoabigthvj0xrkisinpu.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T22:10:17.774Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T22:10:17.774Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a45c5cee18ba00342a3ed5"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre1y2i4",
+  "title": "zare summer slide",
+  "price": 14500,
+  "description": "Bow is enhanced with a quality, shiny stone. Slide material is of clothe, sole is low and relaxing ",
+  "image": {
+    "success": true,
+    "public_id": "p2whxn344dlph6wfibwx",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705270245/p2whxn344dlph6wfibwx.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T22:12:44.730Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T22:12:44.730Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a45d10ee18ba00342a3edc"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre21x4v",
+  "title": "prada sandals",
+  "price": 30000,
+  "description": "Sole is very thick and 100% quality. Leather is cleanable and adjustable for easy wearing.",
+  "image": {
+    "success": true,
+    "public_id": "bzqtaba48otkrmeunbth",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705270403/bzqtaba48otkrmeunbth.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T22:15:44.397Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T22:15:44.397Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a45eedee18ba00342a3eed"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre2c4xv",
+  "title": "calvin klein it shoe",
+  "price": 15000,
+  "description": "It's made with a shiny, wipe clean leather. It has a medium Caterpillar sole ",
+  "image": {
+    "success": true,
+    "public_id": "bglndckykahjwflg4lin",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705270883/bglndckykahjwflg4lin.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T22:23:41.075Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T22:23:41.075Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a45f4bee18ba00342a3ef4"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "d0dc867f88074c61ab69d3529bed968c",
+  "product_id": "PRODlre2e5fv",
+  "title": "versace it shoe",
+  "price": 15000,
+  "description": "It is made with a shiny wipe clean leather and the sole is comfortable not heavy ",
+  "image": {
+    "success": true,
+    "public_id": "wy2vvzgk8ygprpmkaipb",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705271039/wy2vvzgk8ygprpmkaipb.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Joiexquisitelujo",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "location": "Amina",
+  "createdAt": {
+    "$date": "2024-01-14T22:25:15.032Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T22:25:15.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a562c11568d500360bdd62"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "fa385eb550564038bf3f7569ee6c3247",
+  "product_id": "PRODlrf5xtkh",
+  "title": "odumodu bucket hat",
+  "price": 7000,
+  "description": "Handmade crochet bucket hat",
+  "image": {
+    "success": true,
+    "public_id": "j26fd7qhgw37osfm78a9",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705337402/j26fd7qhgw37osfm78a9.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Ayomikun",
+  "phone": {
+    "$numberLong": "8163728007"
+  },
+  "location": "New hall(Makama)",
+  "createdAt": {
+    "$date": "2024-01-15T16:52:17.793Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-15T16:52:17.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a7886ad1eb2200355f0a7a"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "2a4cdc5de38e4c9483907e8c025db496",
+  "product_id": "PRODlrhhps4l",
+  "title": "classic hermes handbag",
+  "price": 6000,
+  "description": "available in pink and green colors 🤗",
+  "image": {
+    "success": true,
+    "public_id": "qj8sbwkecj0fwjwbjnsc",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705478105/qj8sbwkecj0fwjwbjnsc.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Zaynab",
+  "phone": {
+    "$numberLong": "9042856210"
+  },
+  "location": "Newhall",
+  "createdAt": {
+    "$date": "2024-01-17T07:57:30.423Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T08:06:56.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a78a60d1eb2200355f0a87"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "2a4cdc5de38e4c9483907e8c025db496",
+  "product_id": "PRODlrhi0jtm",
+  "title": "luxury cylindrical handbag",
+  "price": 6000,
+  "description": "Available in brown and green colors 🤗",
+  "image": {
+    "success": true,
+    "public_id": "pizfybpxfck7xxfkzx9c",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705478672/pizfybpxfck7xxfkzx9c.jpg"
+  },
+  "category": "Bags",
+  "condition": 5,
+  "seller_name": "Zaynab",
+  "phone": {
+    "$numberLong": "9042856210"
+  },
+  "location": "Newhall",
+  "createdAt": {
+    "$date": "2024-01-17T08:05:52.872Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T08:08:05.712Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a7db070b434800344b7513"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "fa385eb550564038bf3f7569ee6c3247",
+  "product_id": "PRODlrhub2tb",
+  "title": "crochet beret",
+  "price": 6000,
+  "description": "Available in any color of your choice",
+  "image": {
+    "success": true,
+    "public_id": "fy8ef4irtrxrchxzdnq7",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705499361/fy8ef4irtrxrchxzdnq7.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Ayomikun",
+  "phone": {
+    "$numberLong": "8163728007"
+  },
+  "location": "New hall(Makama)",
+  "createdAt": {
+    "$date": "2024-01-17T13:49:59.454Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T13:49:59.454Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65a7db700b434800344b751a"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "fa385eb550564038bf3f7569ee6c3247",
+  "product_id": "PRODlrhudc1l",
+  "title": "ruffled hat",
+  "price": 10000,
+  "description": "Handmade, available in any color of your choice",
+  "image": {
+    "success": true,
+    "public_id": "ehakznmpz3ahi1pprzby",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705499451/ehakznmpz3ahi1pprzby.jpg"
+  },
+  "category": "Fashion",
+  "condition": 5,
+  "seller_name": "Ayomikun",
+  "phone": {
+    "$numberLong": "8163728007"
+  },
+  "location": "New hall(Makama)",
+  "createdAt": {
+    "$date": "2024-01-17T13:51:44.713Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T13:51:44.713Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa53897fda3f00350bc601"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkipmgg",
+  "title": "lucky lock bob",
+  "price": 35000,
+  "description": "10\" inches \n100% human hair \nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "q1ymbr0gq0ffrigoxlvj",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705661252/q1ymbr0gq0ffrigoxlvj.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T10:48:41.226Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T10:48:41.226Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa54437fda3f00350bc608"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkitlu3",
+  "title": "bob wig",
+  "price": 45000,
+  "description": "10\" inches\n100% human hair\nFull frontal \nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "w8atcbtnwawttusgfyil",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705661360/w8atcbtnwawttusgfyil.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T10:51:47.082Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T10:51:47.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa55397fda3f00350bc611"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkiyw36",
+  "title": "bone straight blend",
+  "price": 15000,
+  "description": "Available in Natural Colors\nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "rgmdovzkc84irgkh8ilz",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705661683/rgmdovzkc84irgkh8ilz.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T10:55:53.601Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T10:55:53.601Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa56a37fda3f00350bc618"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkj6mze",
+  "title": "bob wig",
+  "price": 42000,
+  "description": "\nFull frontal bob wig 100%human hair available Golden \n\n10” inches 42,000\n12” inches 44,500\n14” inches 46,500",
+  "image": {
+    "success": true,
+    "public_id": "hxgf9sjcwchzdgvjcf17",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705662095/hxgf9sjcwchzdgvjcf17.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T11:01:55.048Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:01:55.048Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa5b497fda3f00350bc632"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "625a109cfe3b44b8becc4f8af2eae2e1",
+  "product_id": "PRODlrkjw5pg",
+  "title": "ps 5 games used",
+  "price": 15000,
+  "description": " The games are used ",
+  "image": {
+    "success": true,
+    "public_id": "vyqmtwipbado7er77a6x",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705662989/vyqmtwipbado7er77a6x.jpg"
+  },
+  "category": "Electronics",
+  "condition": 4,
+  "seller_name": "Dion",
+  "phone": {
+    "$numberLong": "2349076200550"
+  },
+  "location": "Jaja",
+  "createdAt": {
+    "$date": "2024-01-19T11:21:45.728Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:21:45.728Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa5ba27fda3f00350bc639"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkjy2du",
+  "title": "bob wig dark root",
+  "price": 61000,
+  "description": "14\" inches\nFull frontal\n100% human hair \nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "vuxjgzsakmskh4zx53bi",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705663388/vuxjgzsakmskh4zx53bi.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T11:23:14.722Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:23:14.722Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa5bd67fda3f00350bc640"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkjz63f",
+  "title": "luxury sdd hair with 4×4 closure",
+  "price": 60000,
+  "description": "Available As Seen\nAvailable In Colour;\n99J, 1B99J, 350, 1B350\n10\" Inches 60,000\n12\" Inches 71,000\n14\" Inches 81,000\n16\" Inches 87,000",
+  "image": {
+    "success": true,
+    "public_id": "gxq1zvf9csydgrcbcgth",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705663412/gxq1zvf9csydgrcbcgth.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T11:24:06.191Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:24:06.191Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa5d5e7fda3f00350bc64d"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "625a109cfe3b44b8becc4f8af2eae2e1",
+  "product_id": "PRODlrkk7l0i",
+  "title": "used ps5 console",
+  "price": 530000,
+  "description": "The console comes with a single pad",
+  "image": {
+    "success": true,
+    "public_id": "vmcs46k74xydqy3muln1",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705663724/vmcs46k74xydqy3muln1.jpg"
+  },
+  "category": "Electronics",
+  "condition": 4,
+  "seller_name": "Dion",
+  "phone": {
+    "$numberLong": "2349076200550"
+  },
+  "location": "Jaja",
+  "createdAt": {
+    "$date": "2024-01-19T11:30:38.767Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:30:38.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa5dd57fda3f00350bc655"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkka4n4",
+  "title": "piano body wave factory wig",
+  "price": 65500,
+  "description": "With 13×4 frontal \n16\" inches 65,500\n18\" inches 71,500\n20\" inches 76,000\n22\" inches 85,500\n24\" inches 97,500                26\" inches 112,000                       28\" inches 140,000",
+  "image": {
+    "success": true,
+    "public_id": "vgmpauxf5f9opown0zbr",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705663559/vgmpauxf5f9opown0zbr.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T11:32:37.525Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:32:37.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa5f907fda3f00350bc663"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkkjm4y",
+  "title": "human hair full frontal",
+  "price": 75000,
+  "description": "12\" inches\n100% human hair\nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "ko5evkqyhoirpmjxodfu",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705664252/ko5evkqyhoirpmjxodfu.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T11:40:00.096Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:40:00.096Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65aa60a77fda3f00350bc66a"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrkkplgz",
+  "title": "bob wig",
+  "price": 43500,
+  "description": "Full frontal Jmy 016 T4/350 /4 Bob Wig\n\n10\" inches 43,500\n12\" inches 51,000\n14\" inches 56,000\nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "fzv42sbgnflzd4cxwtt3",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705664520/fzv42sbgnflzd4cxwtt3.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-19T11:44:39.168Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-19T11:44:39.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abca5c9d5cff0035beb646"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm3u9z2",
+  "title": "afro bob",
+  "price": 38000,
+  "description": "100% human hair \nFull frontal\nAfro bob\nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "zuvrwpwdcj4h8xeyqla1",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705757191/zuvrwpwdcj4h8xeyqla1.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T13:27:56.498Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T13:27:56.498Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abcc209d5cff0035beb64f"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm43yrn",
+  "title": "bob wig sdd",
+  "price": 43000,
+  "description": "Super double drawn (SDD)\n43,000 human hair \n77,000 Chinese bone Straight\n120,000 Bone Straight",
+  "image": {
+    "success": true,
+    "public_id": "xljdldmy6x2wdjrnxy5h",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705757417/xljdldmy6x2wdjrnxy5h.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T13:35:28.468Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T13:35:28.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abcdff9d5cff0035beb658"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm4e8hq",
+  "title": "bounce wig",
+  "price": 465000,
+  "description": "100% human hair\nSuper double drawn\nFull frontal\n465,000\nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "i1zxjs6svofosd0cqltz",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705758172/i1zxjs6svofosd0cqltz.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T13:43:27.646Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T13:43:27.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abcf099d5cff0035beb669"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm4jy05",
+  "title": "pixie curls",
+  "price": 70000,
+  "description": "100% human hair \nBob fringe \nAvailable as seen ",
+  "image": {
+    "success": true,
+    "public_id": "udgtr8dj961n99vdyst3",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705758367/udgtr8dj961n99vdyst3.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T13:47:53.970Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T13:47:53.970Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abd0379d5cff0035beb670"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm4qemn",
+  "title": "pixie curls",
+  "price": 55000,
+  "description": "Human hair blend\n10\" 16,000\n\n\n100% human hair\n14\" 55,000",
+  "image": {
+    "success": true,
+    "public_id": "vnmksn5dxkrtbymmrd4u",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705758609/vnmksn5dxkrtbymmrd4u.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T13:52:55.454Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T13:52:55.454Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abd1679d5cff0035beb679"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm4wx4y",
+  "title": "bob wig",
+  "price": 37500,
+  "description": "13x4 frontal \nColour 99j( orange)\n10\" inches 37,500\n12\" inches 44,500 \n14\" inches 50,000",
+  "image": {
+    "success": true,
+    "public_id": "qg5diskqxycdoq54pr17",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705758873/qg5diskqxycdoq54pr17.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T13:57:59.380Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T13:57:59.380Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abd45c9d5cff0035beb685"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm5d517",
+  "title": "luxury deep wig",
+  "price": 185000,
+  "description": "Full frontal deep wig\nOrange color\n32\" inches \n185,000\n",
+  "image": {
+    "success": true,
+    "public_id": "prwdm4whlv6hnfhuyt3j",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705759826/prwdm4whlv6hnfhuyt3j.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T14:10:36.105Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T14:10:36.105Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abd52c9d5cff0035beb68c"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm5hlns",
+  "title": "jerry curl",
+  "price": 52000,
+  "description": "full Frontal\n100% human hair\n14\" inches\n52,000\n",
+  "image": {
+    "success": true,
+    "public_id": "q7kiq8788rhxjy3hkb5o",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705759918/q7kiq8788rhxjy3hkb5o.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T14:14:04.277Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T14:14:04.277Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65abd6199d5cff0035beb695"
+  },
+  "checked": true,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "108e220f1a49422a82b01c0f21388b89",
+  "product_id": "PRODlrm5mp1b",
+  "title": "bob wig",
+  "price": 43000,
+  "description": "T frontal \n1b pink factory wig\n12\" inches 43,000",
+  "image": {
+    "success": true,
+    "public_id": "uwln2hgcvxmsiqs5m0tt",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1705760166/uwln2hgcvxmsiqs5m0tt.jpg"
+  },
+  "category": "Beauty",
+  "condition": 5,
+  "seller_name": "Dynamite Hairs and Accoutre",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "location": "Unilag",
+  "createdAt": {
+    "$date": "2024-01-20T14:18:01.941Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T14:18:01.941Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663d383b97fedb0034dca7a5"
+  },
+  "checked": false,
+  "featured": false,
+  "sold": 0,
+  "seller_id": "90d70de68e534a918a48ff52ee0a0355",
+  "product_id": "PRODlvzq9efm",
+  "title": "xpress weawom 2",
+  "price": 2000,
+  "description": "hsdfsdfsd fj fs fsd fsfsdf",
+  "image": {
+    "success": true,
+    "public_id": "a98inmxtbcs2bogwli5b",
+    "url": "https://res.cloudinary.com/djqqqetjx/image/upload/v1715288116/a98inmxtbcs2bogwli5b.jpg"
+  },
+  "category": "Misc",
+  "condition": 3,
+  "seller_name": "Ajao Malik",
+  "phone": {
+    "$numberLong": "9029936239"
+  },
+  "location": "Montreal",
+  "createdAt": {
+    "$date": "2024-05-09T20:55:23.258Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T20:56:35.390Z"
+  },
+  "__v": 0
+}]

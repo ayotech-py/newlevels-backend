@@ -1,0 +1,497 @@
+[
+{
+  "_id": "75262ab463034450ab33fa5927bb9038",
+  "role": 1,
+  "cart": [],
+  "name": "Damon damonii",
+  "email": "ldamilare793@gmail.com",
+  "password": "$2b$10$Dice.OS00lsZvkzaYoLJ8eXZh32au9GG2TeCsc/OIgN3ypNF336G.",
+  "study_year": "2",
+  "course": "sociology",
+  "location": "biobaku",
+  "phone": {
+    "$numberLong": "9071574097"
+  },
+  "createdAt": {
+    "$date": "2023-08-12T02:57:39.814Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T02:57:39.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "d2bf79a649474f13bf3d3723be5aa316",
+  "role": 0,
+  "cart": [],
+  "name": "SethRollins",
+  "email": "Rollins@gmail.com",
+  "password": "$2b$10$OZVOalTlUScfWjum0afof.uVbB3xgDKm.SPCPysiy6yioklCBjRau",
+  "study_year": "3",
+  "course": "HSS",
+  "location": "biobaku",
+  "phone": {
+    "$numberLong": "9071574097"
+  },
+  "createdAt": {
+    "$date": "2023-08-12T17:41:45.891Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T17:41:45.891Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "3af880b71230403cbb704e83b001a8e2",
+  "role": 0,
+  "cart": [],
+  "name": "Max",
+  "email": "Max@gmail.com",
+  "password": "$2b$10$pulhSQGqvCFOXaJ9AMCY.OVuG9SgKgXwD39zMw8Lmd7hdqin8tZ2C",
+  "location": "Newhall",
+  "phone": {
+    "$numberLong": "8797493898"
+  },
+  "createdAt": {
+    "$date": "2023-08-13T03:09:36.943Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T03:09:36.943Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "04030a3ecd7143c3a9dcaaaa44c29eed",
+  "role": 0,
+  "cart": [],
+  "name": "Test Tester",
+  "email": "solomon.chika1@gmail.com",
+  "password": "$2b$10$KYIa1gRIsK50zHrnGua9zev.NGbR5IdyNaJpaZzEWp3byglEusWES",
+  "location": "World",
+  "phone": {
+    "$numberLong": "2348123456789"
+  },
+  "createdAt": {
+    "$date": "2023-10-22T09:43:39.662Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T09:43:39.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "29d445e98e2c47c5841de25986fd01c0",
+  "role": 0,
+  "cart": [],
+  "name": "2test SecTester",
+  "email": "test1@gmail.com",
+  "password": "$2b$10$.wWwZ6LMvXE8sHLE6cydROZfc3UA7qQy4kT0ZNpCRGcLh07w2Q.tG",
+  "location": "World 2",
+  "phone": {
+    "$numberLong": "2348112233445"
+  },
+  "createdAt": {
+    "$date": "2023-10-22T20:04:54.687Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T20:04:54.687Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "b14099caa8a74ae4aeca7461151a8be0",
+  "role": 0,
+  "cart": [],
+  "name": "Vic",
+  "email": "vic@gmail.com",
+  "password": "$2b$10$dXYTScRdeA6H8YzosvKBgumO/00coQbLjadXxGHqxo1W9MUqWlCy.",
+  "location": "marie",
+  "phone": {
+    "$numberLong": "8797493234"
+  },
+  "createdAt": {
+    "$date": "2023-10-29T02:29:14.849Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-29T02:29:14.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "824858b9229949aa9ae2ef1824566f1e",
+  "role": 0,
+  "cart": [],
+  "name": "Abula Village",
+  "email": "Ajayiabiola29@gmail.com",
+  "password": "$2b$10$Z8bJWurYat8/HZSt876PkOkXmLgvztaN5pM6gcvA6u9Mwx0qGFo0.",
+  "location": "Jaja Complex Unilag",
+  "phone": {
+    "$numberLong": "8188213795"
+  },
+  "createdAt": {
+    "$date": "2023-12-21T17:46:43.848Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-21T17:46:43.848Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "44bdc72d8b324d46974238de9209a51a",
+  "role": 0,
+  "cart": [],
+  "name": "Tomiwa Olayemi",
+  "email": "tboyamscott4@gmail.com",
+  "password": "$2b$10$IJB0TyPGJiV9DuieF0wZSetqiQ5ZuB4GR9v3LahW8./8fdEQUNFTW",
+  "location": "Unilag Medical Centre",
+  "phone": {
+    "$numberLong": "9086159939"
+  },
+  "createdAt": {
+    "$date": "2023-12-28T13:50:26.791Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-28T13:50:26.791Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "0bc79994a1c34eb897ce59686a31e7cc",
+  "role": 0,
+  "cart": [],
+  "name": "Smurz Cosmetics & Accessories.",
+  "email": "motunrayomi94@gmail.com",
+  "password": "$2b$10$isWmrdP127dB.baEKmZHjuT4mBAR7KKVzvRYeTeUWEn9zaYk0csaS",
+  "location": "fss",
+  "phone": 978900661,
+  "createdAt": {
+    "$date": "2023-12-29T19:30:16.481Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T19:30:16.481Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "d0dc867f88074c61ab69d3529bed968c",
+  "role": 0,
+  "cart": [],
+  "name": "Joiexquisitelujo",
+  "email": "joiexquisitelujo@gmail.com",
+  "password": "$2b$10$Ln0xGsbhS8uCzzu5PKn33emMhHAcY77BgD4OFpO1d.8qmui4WR2ZO",
+  "location": "Amina",
+  "phone": {
+    "$numberLong": "7063897269"
+  },
+  "createdAt": {
+    "$date": "2023-12-29T20:53:58.669Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-29T20:53:58.669Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "afede6073cf041e78aeb0d08ba420800",
+  "role": 0,
+  "cart": [],
+  "name": "Tayor",
+  "email": "omotayoyusuf190@gmail.com",
+  "password": "$2b$10$oXkVnm4.zybih52k9yO7JeyOLsOcRl4xYZwVCo01nLVUkDtL9c4py",
+  "location": "Unilag",
+  "phone": {
+    "$numberLong": "9085498486"
+  },
+  "createdAt": {
+    "$date": "2024-01-01T20:25:59.775Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-01T20:25:59.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "b20b29aad1314dbeaab89b7c9ca0fd37",
+  "role": 0,
+  "cart": [],
+  "name": "Victor Osose Omokhua",
+  "email": "Momokhua2050@gmail.com",
+  "password": "$2b$10$JcowYWxGM1Fa/RZvip8EB.2Xxiee5/Jc4A8cKhy6Cvrgvscio2yX6",
+  "location": "Jaja",
+  "phone": {
+    "$numberLong": "8113781844"
+  },
+  "createdAt": {
+    "$date": "2024-01-02T14:49:15.714Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T14:49:15.714Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "713dfdca347c4a29a2805b34d5f595ae",
+  "role": 0,
+  "cart": [],
+  "name": "Irenimoyan",
+  "email": "irenimoyanolowolaiyemo@gmail.com",
+  "password": "$2b$10$KFcHlvBlx7kexZ8TrYBA9e3BrOY9Wk6TK2CiN5L7QJfQeVJb61oQK",
+  "location": "New Hall",
+  "phone": {
+    "$numberLong": "7026011449"
+  },
+  "createdAt": {
+    "$date": "2024-01-02T18:06:57.091Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-02T18:06:57.091Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "38267aa26d7c4747b9bbbec5a5097aa9",
+  "role": 0,
+  "cart": [],
+  "name": "Ballyskincare",
+  "email": "ballyskincare1@gmail.com",
+  "password": "$2b$10$4BDQ1gkMqBP11byMqUB96OTvnnoWVe6UzKFSmNCSOu2eLqOqrNHQ2",
+  "location": "Faculty of social sciences",
+  "phone": {
+    "$numberLong": "9123165976"
+  },
+  "createdAt": {
+    "$date": "2024-01-03T09:25:41.577Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T09:25:41.577Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "a506412fcbbc4499960d4cad7c5d89ee",
+  "role": 0,
+  "cart": [],
+  "name": "Official_Smurz",
+  "email": "amotunrayo226@gmail.com",
+  "password": "$2b$10$PQ.0XrBqmbeI39HotxK.POSHoPwQ9caS0QkPn9F0KfA9oeUfksoV2",
+  "location": "FSS",
+  "phone": {
+    "$numberLong": "9078900661"
+  },
+  "createdAt": {
+    "$date": "2024-01-03T19:03:54.986Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-03T19:03:54.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "108e220f1a49422a82b01c0f21388b89",
+  "role": 0,
+  "cart": [],
+  "name": "Dynamite Hairs and Accoutre",
+  "email": "makolocynthia1@gmail.com",
+  "password": "$2b$10$Y5rfs1KGjhF0pSzUaH0FjO2r3uRygSqJA4kHg2VtWN1bg2yBhnrz2",
+  "location": "Unilag",
+  "phone": {
+    "$numberLong": "8163058716"
+  },
+  "createdAt": {
+    "$date": "2024-01-07T14:23:59.168Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-07T14:23:59.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "b66edcc2226242f2a2616055f2028dcf",
+  "role": 0,
+  "cart": [],
+  "name": "Test",
+  "email": "tester42@gmail.com",
+  "password": "$2b$10$yUFu9uwB979ZUYvMtzOGd.Dsz4FEF3eJofyHwkt5rp.EYYVGn/ZWG",
+  "location": "World",
+  "phone": {
+    "$numberLong": "89653124786"
+  },
+  "createdAt": {
+    "$date": "2024-01-08T08:12:24.720Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-08T08:12:24.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "b0ba893d76dc4df889ee1bc7a61b04f7",
+  "role": 0,
+  "cart": [],
+  "name": "Mogaji Halimah",
+  "email": "mogajihalimah04@gmail.com",
+  "password": "$2b$10$W.PWEnGMzS0HQIt.8snJMO/i1BDRKwUnnLqKFZ6LaMOh.2A/l/fUy",
+  "location": "Amina hostel",
+  "phone": {
+    "$numberLong": "8170611148"
+  },
+  "createdAt": {
+    "$date": "2024-01-14T19:01:32.740Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-14T19:01:32.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "fa385eb550564038bf3f7569ee6c3247",
+  "role": 0,
+  "cart": [],
+  "name": "Ayomikun",
+  "email": "omowunmishodimu@gmail.com",
+  "password": "$2b$10$avJHsfOYbEMCf1mt3UAlHOflCWmjoWP8bpmROoKJyYlddbgmVSrYu",
+  "location": "New hall(Makama)",
+  "phone": {
+    "$numberLong": "8163728007"
+  },
+  "createdAt": {
+    "$date": "2024-01-15T16:48:57.295Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-15T16:48:57.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "2378493564954c50bb5f6a40ab330ecc",
+  "role": 0,
+  "cart": [],
+  "name": "Osarumese Precious E",
+  "email": "osarumeseprecious@gmail.com",
+  "password": "$2b$10$UzyCe194LKnhwjsule4cv.PwU5GA46hDaiQDD9wM65YKcOkwbAs8y",
+  "location": "Amina hostel",
+  "phone": {
+    "$numberLong": "7048046840"
+  },
+  "createdAt": {
+    "$date": "2024-01-15T17:43:01.459Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-15T17:43:01.459Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "625a109cfe3b44b8becc4f8af2eae2e1",
+  "role": 0,
+  "cart": [],
+  "name": "Dion",
+  "email": "dionsquest@gmail.com",
+  "password": "$2b$10$A9HjzsnVP6tpoWM9ZxMfV.xb/OGbXZz8KOO6xQitz9qd6fDKDoaES",
+  "location": "Jaja",
+  "phone": {
+    "$numberLong": "2349076200550"
+  },
+  "createdAt": {
+    "$date": "2024-01-15T19:11:05.704Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-15T19:11:05.704Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "2a4cdc5de38e4c9483907e8c025db496",
+  "role": 0,
+  "cart": [],
+  "name": "Zaynab",
+  "email": "salamiapeke234@gmail.com",
+  "password": "$2b$10$zic5Lkkn/WaJlU0R7uJqJOmsHEzYCSM3wyPavvPLe9DUWeVqOeYuO",
+  "location": "Newhall",
+  "phone": {
+    "$numberLong": "9042856210"
+  },
+  "createdAt": {
+    "$date": "2024-01-17T07:53:43.894Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-17T07:53:43.894Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "c952d83dad104e2b8ec1d81d04658c9e",
+  "role": 0,
+  "cart": [],
+  "name": "Rinnie Accessories",
+  "email": "Ujunwajulius22@gmail.com",
+  "password": "$2b$10$tSAMx3zDY6Uqx3X/yBukoO2stv5E0bFr8NUBGGlm.3iRAuTIcB4zq",
+  "location": "Moremi Hall",
+  "phone": {
+    "$numberLong": "8057695967"
+  },
+  "createdAt": {
+    "$date": "2024-01-18T08:57:28.070Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T08:57:28.070Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "d4e7039b98ab4af09d89000f952b86bf",
+  "role": 0,
+  "cart": [],
+  "name": "Godwin Jemegah",
+  "email": "godwinjdayo@gmail.com",
+  "password": "$2b$10$ymiCHZWGf6j4o8atj9nsDeylB/WxT7lJXlT.m8bxo1sf5M.Qpt9AW",
+  "location": "Nigeria",
+  "phone": {
+    "$numberLong": "2348077813362"
+  },
+  "createdAt": {
+    "$date": "2024-01-28T02:57:19.478Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-28T02:57:19.478Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "90d70de68e534a918a48ff52ee0a0355",
+  "role": 0,
+  "cart": [],
+  "name": "Ajao Malik",
+  "email": "ajaomalik2018@gmail.com",
+  "password": "$2b$10$Lotfk51ge7IXD4pZfPuCVe8WFKzWr3mxsx7e17GAYUm4e9dEzrfkC",
+  "location": "Montreal",
+  "phone": {
+    "$numberLong": "9029936239"
+  },
+  "createdAt": {
+    "$date": "2024-05-06T18:32:08.898Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-06T18:32:08.898Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "0ff4e77b08b64fcc8a3b037d6d617dd8",
+  "role": 0,
+  "cart": [],
+  "name": "John Mike",
+  "email": "ajaomalik@gmail.com",
+  "password": "$2b$10$nw.CB9qOs8/9F5dlEIZeU.ajlLhogA9hdR4NZTpiM379HKokGwTzy",
+  "location": "NewHall, Unilag",
+  "phone": {
+    "$numberLong": "9029936239"
+  },
+  "createdAt": {
+    "$date": "2024-05-09T16:13:00.888Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T16:13:00.888Z"
+  },
+  "__v": 0
+}]

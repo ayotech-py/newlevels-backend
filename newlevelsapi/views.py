@@ -9,23 +9,18 @@ import random
 import string
 from django.contrib.auth import authenticate
 from rest_framework.response import Response
-from rest_framework.filters import SearchFilter
 from django.db.models import Q
-from rest_framework.decorators import action
 from rest_framework.views import APIView
 from .api_key_auth import ApiKeyAuthentication
 from .authentication import Authentication
 from rest_framework.permissions import IsAuthenticated
-from django.forms.models import model_to_dict
 from django.core.files.base import ContentFile
 from django.contrib.auth.hashers import make_password
-from asgiref.sync import sync_to_async
 import pusher
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 from django.shortcuts import get_object_or_404
 import json
-from django.http import JsonResponse
 from rest_framework import status
 from django.db.models import OuterRef, Subquery
 from django.core.mail import send_mail
@@ -35,6 +30,7 @@ from django.contrib.auth.tokens import default_token_generator
 from django.urls import reverse
 from django.utils.timezone import now
 from decimal import Decimal
+from .load_data import load_users
 
 
 
@@ -103,7 +99,7 @@ class ProductViewSet(ModelViewSet):
             product = Product.objects.create(
                 title=data['title'],
                 description=data['description'],
-                price=Decimal(data['price']),
+                price=data['price'],
                 category=data['category'],
                 condition=data['condition'],
                 image=image,
