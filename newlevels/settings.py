@@ -138,13 +138,13 @@ WSGI_APPLICATION = 'newlevels.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'NewlevelsTestDB',
+        'NAME': DB_NAME,
         "CLIENT": {
-           "name": 'NewlevelsTestDB',
-           "host": 'mongodb+srv://ldamilare793:svnu7XHdKrpVZH2b@cluster0.skkagmb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
-           "username": 'ldamilare793',
-           "password": 'svnu7XHdKrpVZH2b',
-           "authMechanism": "SCRAM-SHA-1",
+           "name": DB_NAME,
+           "host": DB_HOST,
+           "username": DB_USERNAME,
+           "password": DB_PASSWORD,
+           "authMechanism": DB_AUTH,
         }, 
     }
 }
@@ -159,8 +159,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'ajaomalik2018@gmail.com'
-EMAIL_HOST_PASSWORD = 'mrqfvvadwrxfxrbo'
+EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 
 
 # Password validation
@@ -225,6 +225,12 @@ PUSHER_APP_ID=os.environ['PUSHER_APP_ID']
 PUSHER_KEY=os.environ['PUSHER_KEY']
 PUSHER_SECRET=os.environ['PUSHER_SECRET']
 PUSHER_CLUSTER=os.environ['PUSHER_CLUSTER']
+
+DB_NAME=os.environ['DB_NAME']
+DB_HOST=os.environ['DB_HOST']
+DB_USERNAME=os.environ['DB_USERNAME']
+DB_PASSWORD=os.environ['DB_PASSWORD']
+DB_AUTH=os.environ['DB_AUTH']
 
 CLOUD_NAME = os.environ["CLOUD_NAME"]
 CLOUDINARY_API_KEY = os.environ['CLOUDINARY_API_KEY']

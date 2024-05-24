@@ -148,6 +148,18 @@ class ProductViewSet(ModelViewSet):
             product.condition = data['condition']
             product.approved = False
             product.save()
+
+            product.image = f'https://res.cloudinary.com/di040wc0d/image/upload/v1/{product.image}'
+            product_data = vars(product)
+            product_details = '\n'.join([f"{key}: {value}" for key, value in product_data.items()])
+            
+            send_mail(
+                'Product Update',
+                f'Customer: {product.customer.name}\nProduct Details:\n{product_details}\nClick the link to approve product: https://newlevels-backend.vercel.app/api/approve/{product.unique_token}/\nClick the link to feature product: https://newlevels-backend.vercel.app/api/feature/{product.unique_token}/',
+                settings.EMAIL_HOST_USER,
+                [settings.EMAIL_HOST_USER],
+                fail_silently=False,
+            )
         return Response({"message": "Ads successfully Updated!", 'product': ProductSerializer(product).data})
 
 class ApproveProduct(APIView):
