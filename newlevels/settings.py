@@ -13,6 +13,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 
+load_dotenv(find_dotenv())
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -134,6 +137,11 @@ WSGI_APPLICATION = 'newlevels.wsgi.application'
     }
 } """
 
+DB_NAME=os.environ['DB_NAME']
+DB_HOST=os.environ['DB_HOST']
+DB_USERNAME=os.environ['DB_USERNAME']
+DB_PASSWORD=os.environ['DB_PASSWORD']
+DB_AUTH=os.environ['DB_AUTH']
 
 DATABASES = {
     'default': {
@@ -204,8 +212,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-load_dotenv(find_dotenv())
-
 MEDIA_URL = "newlevels/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "newlevels")
 
@@ -225,12 +231,6 @@ PUSHER_APP_ID=os.environ['PUSHER_APP_ID']
 PUSHER_KEY=os.environ['PUSHER_KEY']
 PUSHER_SECRET=os.environ['PUSHER_SECRET']
 PUSHER_CLUSTER=os.environ['PUSHER_CLUSTER']
-
-DB_NAME=os.environ['DB_NAME']
-DB_HOST=os.environ['DB_HOST']
-DB_USERNAME=os.environ['DB_USERNAME']
-DB_PASSWORD=os.environ['DB_PASSWORD']
-DB_AUTH=os.environ['DB_AUTH']
 
 CLOUD_NAME = os.environ["CLOUD_NAME"]
 CLOUDINARY_API_KEY = os.environ['CLOUDINARY_API_KEY']
